@@ -407,7 +407,7 @@ const selectSoftware = (index: number) => {
           >
             <h1 class="w-full text-lg font-bold md:hidden">Kopi Bara</h1>
             <div class="w-full items-center md:w-1/2">
-              <img class="mx-auto" src="@/assets/images/Developer.png" />
+              <img class="mx-auto max-h-50" src="@/assets/images/kopibara.png" />
             </div>
             <div class="w-full flex-col md:w-1/2 space-y-2">
               <h1 class="hidden text-lg font-bold md:block">Kopi Bara</h1>
