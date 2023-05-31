@@ -33,7 +33,7 @@ onMounted(() => {
   >
     <div class="mx-auto w-90% flex py-10">
       <!-- Left Navigation -->
-      <div class="mr-auto hidden flex-1 justify-center md:flex">
+      <div class="mr-auto hidden flex-inline justify-center md:flex">
         <router-link
           class="nav-text hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/' }"
@@ -52,10 +52,12 @@ onMounted(() => {
       </div>
       <!-- Logo -->
       <div class="flex flex-1">
-        <img class="mx-auto max-h-8" src="@/assets/images/logo.png" />
+        <router-link class="mx-auto" :to="'/about'">
+          <img class="max-h-8 hover:cursor-pointer" src="@/assets/images/logo.png" />
+        </router-link>
       </div>
       <!-- Right Navigation -->
-      <div class="ml-auto hidden flex-1 justify-center md:flex">
+      <div class="ml-auto hidden flex-inline justify-center md:flex">
         <router-link
           class="nav-text hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/investor' }"

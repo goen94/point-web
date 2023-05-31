@@ -12,19 +12,48 @@
               teknologi dengan sistem Open Source.
             </p>
           </div>
-          <div class="flex flex-wrap md:w-2/3 md:flex-nowrap space-y-4 md:space-x-4">
-            <div class="w-1/1 flex flex-col md:w-1/3 space-y-4">
-              <a class="text-sm text-white md:text-lg">Beranda</a>
-              <a class="text-sm text-white md:text-lg">Develv</a>
-              <a class="text-sm text-white md:text-lg">Marketplace</a>
-              <a class="text-sm text-white md:text-lg">Investor</a>
+          <div class="flex flex-wrap md:w-2/3 md:flex-nowrap space-y-4 md:space-x-4 md:space-y-0">
+            <div class="w-full flex flex-col md:w-1/3 space-y-4">
+              <router-link class="text-sm text-white md:text-lg hover:text-yellow-400" :to="'/'">
+                Beranda
+              </router-link>
+              <router-link class="text-sm text-white md:text-lg hover:text-yellow-400" :to="'/'">
+                Develv
+              </router-link>
+              <router-link
+                class="text-sm text-white md:text-lg hover:text-yellow-400"
+                :to="'/marketplace'"
+              >
+                Marketplace
+              </router-link>
+              <router-link
+                class="text-sm text-white md:text-lg hover:text-yellow-400"
+                :to="'/investor'"
+              >
+                Investor
+              </router-link>
             </div>
-            <div class="w-1/1 flex flex-col md:w-1/3 space-y-4">
-              <a class="text-sm text-white md:text-lg">Tentang Kami</a>
-              <a class="text-sm text-white md:text-lg">Bantuan</a>
-              <a class="text-sm text-white md:text-lg">Kontak</a>
+            <div class="w-full flex flex-col md:w-1/3 space-y-4">
+              <router-link
+                class="text-sm text-white md:text-lg hover:text-yellow-400"
+                :to="'/about'"
+              >
+                Tentang Kami
+              </router-link>
+              <router-link
+                class="text-sm text-white md:text-lg hover:text-yellow-400"
+                :to="'/help'"
+              >
+                Bantuan
+              </router-link>
+              <router-link
+                class="text-sm text-white md:text-lg hover:text-yellow-400"
+                :to="'/contact'"
+              >
+                Kontak
+              </router-link>
             </div>
-            <div class="w-1/1 flex flex-col md:w-1/3 space-y-4">
+            <div class="w-full flex flex-col md:w-1/3 space-y-4">
               <p class="text-sm text-white md:text-lg">We are in Social</p>
               <div class="flex text-sm text-green-600 space-x-6 md:text-xl">
                 <div class="i-cib-facebook-f"></div>

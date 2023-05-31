@@ -186,25 +186,11 @@ onMounted(() => {
               <button
                 id="dropdownDefaultButton"
                 data-dropdown-toggle="dropdown"
-                class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="bg-white-700 inline-flex items-center border border-green-500 rounded-8 px-4 py-2.5 text-center text-sm font-medium text-green-700"
                 type="button"
               >
-                Dropdown button
-                <svg
-                  class="ml-2 h-4 w-4"
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
+                Urut Berdasarkan
+                <div class="i-mdi-chevron-down ml-8 text-green-700"></div>
               </button>
             </div>
           </div>
