@@ -4,7 +4,7 @@ export const routes = {
     children: [
       {
         path: 'signup',
-        component: () => import('./views/page-signin.vue'),
+        component: () => import('./views/page-signup.vue'),
       },
     ],
   }

@@ -1,12 +1,14 @@
 <template>
-  <div class="h-screen flex">
-    <div class="w-3/5 rounded-br-full rounded-tr-full bg-green-600 p-16">
-      <img class="max-h-8" src="https://assets.pointhub.net/assets/images/logo/primary/logo.png" />
-      <h1 class="mt-4 font-bold text-white">Solusi Sistem Software</h1>
-      <h1 class="font-bold text-yellow-400">Fleksibel & Terintegrasi</h1>
-      <img class="mr-auto h-65vh" src="@/assets/images/Thumbnail-Icon.png" />
+  <div class="flex flex-wrap md:h-screen md:flex-nowrap">
+    <div
+      class="m-w-screen rounded-b-[50%] bg-green-600 p-8 px-30 text-center -mx-30 md:mx-0 md:w-3/5 md:rounded-b-0 md:rounded-br-full md:rounded-tr-full md:px-0 md:px-10 md:pt-10 md:text-start"
+    >
+      <img class="mx-auto max-h-8 md:mx-0" src="@/assets/images/logo.png" />
+      <h1 class="mt-4 text-2xl font-bold text-white md:text-4xl">Solusi Sistem Software</h1>
+      <h1 class="text-2xl font-bold text-yellow-400 md:text-4xl">Fleksibel & Terintegrasi</h1>
+      <img class="mr-auto h-50vh md:h-65vh" src="@/assets/images/Thumbnail-Icon.png" />
     </div>
-    <div class="mr-32 w-2/5 py-16 pl-26 space-y-4">
+    <div class="w-full p-8 text-center md:mr-32 md:w-2/5 space-y-4 md:py-16 md:pl-26 md:text-start">
       <h1 class="mt-4 text-lg font-bold text-black">Sign Up to Pointhub</h1>
       <button
         type="button"
