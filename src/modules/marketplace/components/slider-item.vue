@@ -171,7 +171,7 @@ function moveRight() {
   }
 }
 
-function afterTransition(callback) {
+function afterTransition(callback: any) {
   const listener = () => {
     callback()
     inner.value.removeEventListener('transitionend', listener)
