@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import BoxSearchMarketplace from '../component/box-search-marketplace.vue'
 
 const softwares = ref([
   'Key Performance Indicator',
@@ -17,10 +18,10 @@ const selectSoftware = (index: number) => {
 </script>
 
 <template>
-  <section class="bg-green-50 -mt-120px">
-    <div class="clip-container m-w-screen relative rounded-b-[100%] -mx-60 lg:min-h-80vh">
-      <div class="h-full w-full place-items-center justify-center pt-150px text-center md:pt-200px">
-        <p class="px-6 text-sm text-yellow-500 md:px-0 md:text-4xl">
+  <section class="overflow-hidden bg-green-50">
+    <div class="clip-container relative min-h-50vh rounded-b-[50%] -mx-40 md:min-h-100vh">
+      <div class="h-full w-full place-items-center justify-center text-center">
+        <p class="px-6 text-sm text-yellow-500 pt-30 md:px-0 md:pt-60 md:text-4xl">
           Solusi Sistem Software Fleksibel & Terintegrasi
         </p>
         <h1 class="text-3xl font-bold text-white lg:text-8xl md:text-6xl">
@@ -115,24 +116,7 @@ const selectSoftware = (index: number) => {
     <div class="container">
       <div class="flex">
         <div class="relative w-full -mt-30">
-          <div class="rounded-8 from-green-700 to-green-500 bg-gradient-to-r px-6 py-8 text-center">
-            <h1 class="text-center text-lg font-bold text-orange-400 md:text-3xl">
-              Tidak Menemukan Software
-              <span class="text-white">Yang Anda Butuhkan?</span>
-            </h1>
-            <h1 class="mt-2 text-center text-xs text-white md:text-lg">
-              Tidak perlu khawatir! Jelajahi Marketplace kami untuk menemukan Software tersebut!
-            </h1>
-            <div class="flex">
-              <button
-                type="button"
-                class="mx-auto mt-4 inline-flex items-center rounded-8 bg-white px-3 py-3 text-sm font-bold text-green-600 md:mt-8 md:px-5 md:text-xl"
-              >
-                <div class="i-mdi-magnify mr-2"></div>
-                Cari di Point Marketplace
-              </button>
-            </div>
-          </div>
+          <BoxSearchMarketplace />
         </div>
       </div>
       <div class="flex-1 pt-4 space-y-2 md:pt-16 md:space-y-4">
@@ -562,10 +546,10 @@ const selectSoftware = (index: number) => {
 
 <style>
 .clip-container {
-  max-height: 500px;
   background-image: url('@/assets/images/Banner-Home-Point.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 #spin:after {

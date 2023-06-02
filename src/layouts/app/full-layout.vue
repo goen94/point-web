@@ -18,6 +18,5 @@ import AppFooter from './app-footer.vue'
 html,
 body {
   max-width: 100%;
-  overflow-x: hidden;
 }
 </style>

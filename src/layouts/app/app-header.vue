@@ -27,13 +27,17 @@ onMounted(() => {
 
 <template>
   <!-- Header Wrapper-->
-  <nav
+  <!-- <nav
     class="sticky top-0 z-20"
     :class="[yOffset > 50 || path === '/detail' ? 'bg-green-700 shadow' : 'bg-transparent']"
+  > -->
+  <header
+    class="fixed top-0 z-50 w-full bg-green-700"
+    :class="[yOffset > 50 || path === '/detail' ? 'bg-green-700 shadow' : 'bg-transparent']"
   >
-    <div class="mx-auto w-90% flex py-10">
+    <div class="mx-auto flex py-6">
       <!-- Left Navigation -->
-      <div class="mr-auto hidden flex-inline justify-center md:flex">
+      <div class="ml-auto mr-10 hidden justify-center md:flex md:flex-inline">
         <router-link
           class="nav-text hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/' }"
@@ -51,13 +55,18 @@ onMounted(() => {
         </router-link>
       </div>
       <!-- Logo -->
-      <div class="flex flex-1">
-        <router-link class="mx-auto" :to="'/about'">
-          <img class="max-h-8 hover:cursor-pointer" src="@/assets/images/logo.png" />
-        </router-link>
+      <div class="w-full flex md:w-auto">
+        <img class="mx-auto max-h-8 hover:cursor-pointer" src="@/assets/images/logo.png" />
       </div>
       <!-- Right Navigation -->
-      <div class="ml-auto hidden flex-inline justify-center md:flex">
+      <div class="ml-10 mr-auto hidden justify-center md:flex md:flex-inline">
+        <router-link
+          class="nav-text hover:text-yellow-400"
+          :class="{ 'text-yellow-400': path === '/about' }"
+          :to="'/about'"
+        >
+          Profil
+        </router-link>
         <router-link
           class="nav-text hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/investor' }"
@@ -128,5 +137,5 @@ onMounted(() => {
         </router-link>
       </div>
     </div>
-  </nav>
+  </header>
 </template>

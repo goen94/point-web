@@ -12,10 +12,10 @@ const expand = (index: number) => {
 </script>
 
 <template>
-  <section class="-mt-120px">
+  <section>
     <div class="bg-header md:bg-[100%] relative h-full bg-cover">
       <div class="relative container">
-        <div class="flex flex-wrap pt-50px md:flex-nowrap space-x-4 space-y-4 md:pt-120px">
+        <div class="flex flex-wrap pt-30px md:flex-nowrap space-x-4 space-y-4 md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
               class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left md:text-4xl"

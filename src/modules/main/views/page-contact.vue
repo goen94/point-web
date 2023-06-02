@@ -1,10 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="-mt-120px">
+  <section>
     <div class="bg-header md:bg-[100%] relative h-full bg-cover">
       <div class="relative container">
-        <div class="flex flex-wrap pt-50px md:flex-nowrap space-x-4 space-y-4 md:pt-120px">
+        <div class="flex flex-wrap pt-30px md:flex-nowrap space-x-4 space-y-4 md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
               class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left md:text-4xl"
@@ -83,7 +83,7 @@
     </div>
   </section>
 
-  <section class="min-h-[100px] bg-green-50 pb-2">
+  <section class="min-h-[100px] bg-green-50 pb-5">
     <div class="container">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5989386037304!2d112.7324176104555!3d-7.286389171583185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb739a16e027%3A0x2ed5fc64cd02763c!2sPointHub!5e0!3m2!1sen!2sid!4v1685178291245!5m2!1sen!2sid"

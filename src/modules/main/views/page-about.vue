@@ -17,10 +17,10 @@ const selectSoftware = (index: number) => {
 </script>
 
 <template>
-  <section class="-mt-120px">
+  <section>
     <div class="bg-header md:bg-[100%] relative h-full bg-cover">
       <div class="relative container">
-        <div class="flex flex-wrap pt-50px md:flex-nowrap md:pt-120px">
+        <div class="flex flex-wrap pt-30px md:flex-nowrap md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
               class="mx-auto px-4 pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left md:text-4xl"
@@ -231,7 +231,7 @@ const selectSoftware = (index: number) => {
           >
             <h1 class="w-full text-lg font-bold md:hidden">Kopi Bara</h1>
             <div class="w-full items-center md:w-1/2">
-              <img class="mx-auto" src="@/assets/images/Developer.png" />
+              <img class="mx-auto max-h-50" src="@/assets/images/kopibara.png" />
             </div>
             <div class="w-full flex-col md:w-1/2 space-y-2">
               <h1 class="hidden text-lg font-bold md:block">Kopi Bara</h1>
