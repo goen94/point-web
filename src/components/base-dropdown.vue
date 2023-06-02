@@ -27,7 +27,7 @@ const props = withDefaults(defineProps<Props>(), {
       </MenuButton>
     </div>
 
-    <transition
+    <!-- <transition
       enter-active-class="transition duration-100 ease-out"
       enter-from-class="transform scale-95 opacity-0"
       enter-to-class="transform scale-100 opacity-100"
@@ -41,7 +41,7 @@ const props = withDefaults(defineProps<Props>(), {
       >
         <slot></slot>
       </MenuItems>
-    </transition>
+    </transition> -->
   </Menu>
 </template>
 
