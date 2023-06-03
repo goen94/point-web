@@ -20,22 +20,22 @@
 
   <section class="relative bg-[#edf9f0]">
     <div class="mx-auto w-[60%]">
-      <div class="flex-col py-10 space-x-4 space-y-6 text-center">
-        <h1 class="text-center items-center text-5xl font-medium text-black">
+      <div class="flex-col py-10 text-center space-x-4 space-y-6">
+        <h1 class="items-center text-center text-5xl font-medium text-black">
           Pointhub <span class="text-orange-500">Marketplace</span>
         </h1>
         <h6 class="mt-4 text-center">
           Jelajahi software yang dibuat oleh para developer/pengembang global, dengan jaminan bahwa
           software tersebut telah melalui peninjauan Tim Pointhub.
         </h6>
-        <div class="relative w-full mt-8">
+        <div class="relative mt-8 w-full">
           <input
             type="text"
             id="search"
-            class="bg-white border border-green-300 focus:outline-none text-gray-900 text-xl rounded-8 block w-full py-3 px-5"
+            class="block w-full border border-green-300 rounded-8 bg-white px-5 py-3 text-xl text-gray-900 focus:outline-none"
             placeholder="Cari Software"
           />
-          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
             <svg
               aria-hidden="true"
               class="w-6 h-6 text-green"
@@ -57,25 +57,11 @@
               <button
                 id="dropdownDefaultButton"
                 data-dropdown-toggle="dropdown"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button"
               >
                 Dropdown button
-                <svg
-                  class="w-4 h-4 ml-2"
-                  aria-hidden="true"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 9l-7 7-7-7"
-                  ></path>
-                </svg>
+                <div class="i-mdi-chevron-down text-green-700"></div>
               </button>
             </div>
             <div

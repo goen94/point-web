@@ -2,6 +2,7 @@
 import { onMounted, ref } from 'vue'
 import cardItem from './components/card-item.vue'
 import slider from './components/slider.vue'
+import sliderItem from './components/slider-item.vue'
 
 const yOffset = ref(0)
 const arrItems = ref(4)
@@ -220,7 +221,7 @@ onMounted(() => {
     </div>
   </section>
 
-  <section class="relative bg-light py-10">
+  <section class="relative bg-light pt-10">
     <div class="container">
       <div class="flex-col">
         <div class="flex items-center py-4">
@@ -230,19 +231,24 @@ onMounted(() => {
           </h1>
           <div class="flex-grow bg-gray-400 md:h-px"></div>
         </div>
-        <slider />
-
+        <sliderItem />
+      </div>
+    </div>
+    <!-- <div class="container">
+      <div class="flex-col">
         <div class="mt-16 flex items-center py-4">
           <div class="flex-grow bg-gray-400 md:h-px"></div>
           <h1 class="title mx-4 text-center text-3xl font-bold text-black md:text-5xl">
             Sedang <span class="text-orange-500">Diskon*</span>
           </h1>
-          <div class="h-px flex-grow bg-gray-400"></div>
+          <div class="flex-grow bg-gray-400 md:h-px"></div>
         </div>
-        <slider />
+        <sliderItem />
       </div>
-    </div>
+    </div> -->
   </section>
+
+  <section class="bg-light pb-10"></section>
 
   <section class="bg-black pb-20 md:pb-14">
     <div class="relative rounded-b-[15%] bg-light px-4 pb-25 -m-4 md:rounded-b-[30%]">

@@ -1,9 +1,11 @@
 <template>
   <div class="w-full">
     <div class="overflow-hidden">
-      <div ref="inner" :style="innerStyles" class="inner">
-        <div v-for="card in cards" :key="card" class="inline-flex whitespace-normal py-8">
-          <div class="ml-1 max-w-300px flex-col overflow-hidden rounded-lg shadow-lg md:mr-4">
+      <ul ref="inner" :style="innerStyles" class="inner">
+        <li v-for="card in cards" :key="card" class="inline-flex whitespace-normal py-8">
+          <div
+            class="max-w-300px flex-col overflow-hidden rounded-lg shadow md:ml-1 md:mr-4 md:shadow-lg"
+          >
             <img
               class="max-h-250px w-full object-cover"
               src="@/assets/images/No_Image_Available.jpg"
@@ -28,7 +30,7 @@
                 <div class="mt-auto text-end">
                   <button
                     type="button"
-                    class="border border-orange-500 rounded-8 bg-white px-4 py-2 text-sm font-bold text-orange-500"
+                    class="border border-orange-500 rounded-8 bg-white px-2 py-2 text-xs font-bold text-orange-500"
                   >
                     COBA GRATIS!
                   </button>
@@ -36,8 +38,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
   <button

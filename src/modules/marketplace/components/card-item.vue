@@ -23,7 +23,7 @@
         <div class="mt-auto text-end">
           <button
             type="button"
-            class="border border-orange-500 rounded-8 bg-white px-4 py-2 text-sm font-bold text-orange-500"
+            class="border border-orange-500 rounded-8 bg-white px-2 py-2 text-xs font-bold text-orange-500"
           >
             COBA GRATIS!
           </button>
