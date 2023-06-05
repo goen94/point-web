@@ -27,16 +27,28 @@ const expand = (index: number) => {
     <div class="container">
       <div class="flex flex-wrap items-center py-8 md:flex-nowrap space-y-6">
         <div
-          class="mx-auto h-32 w-32 w-full flex items-center rounded-full bg-white text-center md:mr-8"
+          class="mx-auto h-35 w-35 w-full flex items-center rounded-full bg-white text-center md:mr-8"
         >
           <p class="mx-auto text-sm">Logo Aplikasi</p>
         </div>
         <div class="w-full text-center md:w-3/6 md:flex-col space-y-2 md:text-left">
-          <h1 class="items-center text-4xl font-medium text-black md:font-bold">
+          <h1 class="items-center text-5xl font-medium text-black md:font-bold">
             Nama <span class="text-orange-500">Software</span>
           </h1>
-          <h1 class="text-xl">Oleh <a class="text-blue-600" href="#">Pengembang</a></h1>
-          <h1 class="text-lg">00+ Sales | (00)</h1>
+          <h1 class="text-xl font-medium">Oleh <a class="text-blue-600" href="#">Pengembang</a></h1>
+          <div class="inline-flex items-center">
+            <h1 class="text-lg">
+              <span class="font-bold">00+</span> <span class="font-medium">Sales |</span>&nbsp;
+            </h1>
+            <div class="inline-flex">
+              <div class="i-ic-outline-star text-gray-300"></div>
+              <div class="i-ic-outline-star text-gray-300"></div>
+              <div class="i-ic-outline-star text-yellow-400"></div>
+              <div class="i-ic-outline-star text-yellow-400"></div>
+              <div class="i-ic-outline-star text-yellow-400"></div>
+            </div>
+            <h1 class="text-lg font-medium">&nbsp;(00)</h1>
+          </div>
         </div>
         <div class="w-full text-center md:w-2/6">
           <div class="ml-auto">
@@ -45,12 +57,12 @@ const expand = (index: number) => {
                 type="button"
                 class="mx-auto mt-2 rounded-8 from-orange-400 to-yellow-400 bg-gradient-to-r px-20 py-3 text-xl font-bold text-white md:mx-0"
               >
-                COBA GRATIS!
+                COBA GRATIS
               </button>
             </div>
             <div>
               <button
-                class="inline-flex items-center rounded-lg bg-transparent px-4 py-2.5 text-center text-sm font-medium text-green-700"
+                class="inline-flex items-center rounded-lg bg-transparent px-4 py-2.5 text-center text-lg font-medium text-green-700"
                 type="button"
               >
                 Lihat Harga Software
@@ -66,12 +78,11 @@ const expand = (index: number) => {
   <section class="bg-white">
     <div class="container">
       <div class="flex-col py-8 space-y-6">
-        <div class="border-b border-gray-200 text-center text-sm font-medium text-gray-500">
+        <div class="border-b border-gray-200 text-center text-lg font-bold text-gray-500">
           <ul class="flex flex-wrap -mb-px">
             <li v-for="(tab, index) in tabs" :key="index" class="mr-8">
               <a
-                href="#"
-                class="inline-block border-b-2 rounded-t-lg p-4 hover:text-green-700"
+                class="inline-block border-b-2 rounded-t-lg p-4 hover:cursor-pointer hover:text-green-700"
                 :class="[
                   activeTab === index ? 'border-green-700 text-green-700' : 'border-transparent'
                 ]"
@@ -82,7 +93,7 @@ const expand = (index: number) => {
             </li>
           </ul>
         </div>
-        <div class="flex flex-wrap md:flex-nowrap space-y-6 md:space-x-8">
+        <div class="flex flex-wrap md:flex-nowrap space-y-6 md:space-x-8 md:space-y-0">
           <div v-if="activeTab == 0" class="w-full flex-col md:w-2/3 space-y-4">
             <img
               class="max-h-[500px] w-full rounded-lg object-cover"
@@ -141,6 +152,59 @@ const expand = (index: number) => {
             </div>
           </div>
 
+          <div v-if="activeTab == 2" class="w-full flex-col md:w-2/3 space-y-4">
+            <div class="flex flex-wrap justify-between md:flex-nowrap">
+              <div class="mb-6 inline-flex items-center">
+                <h1 class="text-lg font-bold text-gray md:text-xl">00+ Reviews</h1>
+                <div class="ml-4 inline-flex">
+                  <div class="i-ic-outline-star text-xl text-gray-300"></div>
+                  <div class="i-ic-outline-star text-xl text-gray-300"></div>
+                  <div class="i-ic-outline-star text-xl text-yellow-400"></div>
+                  <div class="i-ic-outline-star text-xl text-yellow-400"></div>
+                  <div class="i-ic-outline-star text-xl text-yellow-400"></div>
+                </div>
+              </div>
+              <div>
+                <button
+                  id="dropdownDefaultButton"
+                  data-dropdown-toggle="dropdown"
+                  class="bg-white-700 inline-flex items-center border border-gray-400 rounded-8 px-4 py-2.5 text-center text-sm font-medium text-gray"
+                  type="button"
+                >
+                  Urut Berdasarkan
+                  <div class="i-mdi-chevron-down ml-8 text-black"></div>
+                </button>
+              </div>
+            </div>
+
+            <div v-for="num in 3" :key="num" class="border-2 border-light-600 rounded-6">
+              <div
+                class="flex justify-between border-b-2 border-light-600 rounded-t-6 bg-light p-4"
+              >
+                <div class="inline-flex items-center">
+                  <h1 class="text-lg font-medium text-gray">Name</h1>
+                  <div class="ml-4 inline-flex">
+                    <div class="i-ic-outline-star text-lg text-gray-300"></div>
+                    <div class="i-ic-outline-star text-lg text-gray-300"></div>
+                    <div class="i-ic-outline-star text-lg text-yellow-400"></div>
+                    <div class="i-ic-outline-star text-lg text-yellow-400"></div>
+                    <div class="i-ic-outline-star text-lg text-yellow-400"></div>
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-sm font-medium text-gray">00 days ago</h1>
+                </div>
+              </div>
+              <div class="p-4">
+                <p class="text-sm text-gray">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div v-if="activeTab == 3" class="w-full flex-col md:w-2/3 space-y-4">
             <div class="divide-y-2">
               <div class="flex py-6" v-for="idx in 4" :key="idx">
@@ -171,69 +235,92 @@ const expand = (index: number) => {
           <div class="w-full flex-col md:w-1/3 space-y-4">
             <div class="flex flex-col border-1 border-green-600 rounded-4 p-8 shadow">
               <div class="flex flex-col">
-                <div class="mb-4 flex items-center">
-                  <input
-                    id="default-radio-1"
-                    type="radio"
-                    value=""
-                    name="default-radio"
-                    class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
-                  />
-                  <label
-                    for="default-radio-1"
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >
-                    Harga Software
-                  </label>
-                  <p class="ml-auto">Rp. 000.000</p>
+                <div class="mb-2">
+                  <div v-for="radio in 3" :key="radio" class="mb-4 flex items-center">
+                    <input
+                      id="default-radio-1"
+                      type="radio"
+                      value=""
+                      name="default-radio"
+                      class="h-4 w-4 border-gray-300 bg-gray-100 accent-green-600"
+                    />
+                    <label
+                      for="default-radio-1"
+                      class="ml-2 text-sm font-bold text-gray-900 dark:text-gray-300"
+                    >
+                      Harga Software
+                    </label>
+                    <p class="ml-auto font-bold text-green-600">Rp. 000.000</p>
+                  </div>
                 </div>
-                <div class="mb-4 flex items-center">
-                  <input
-                    id="default-radio-1"
-                    type="radio"
-                    value=""
-                    name="default-radio"
-                    class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
-                  />
-                  <label
-                    for="default-radio-1"
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                  >
-                    Harga Software
-                  </label>
-                  <p class="ml-auto">Rp. 000.000</p>
+                <div>
+                  <div v-for="item in 3" :key="item" class="mb-4 inline-flex items-center">
+                    <div class="i-ic-outline-check mr-2 text-green-600"></div>
+                    <h1 class="text-xs font-medium">Fasilitas/Keunggulan Software 0{{ item }}</h1>
+                  </div>
                 </div>
-                <div class="mb-4 flex items-center">
-                  <input
-                    id="default-radio-1"
-                    type="radio"
-                    value=""
-                    name="default-radio"
-                    class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
-                  />
-                  <label
-                    for="default-radio-1"
-                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                <div>
+                  <button
+                    type="button"
+                    class="mx-auto mt-2 w-full rounded-8 from-green-600 to-green-400 bg-gradient-to-r px-3 py-3 text-xl font-bold text-white md:mx-0"
                   >
-                    Harga Software
-                  </label>
-                  <p class="ml-auto">Rp. 000.000</p>
+                    Beli Software
+                  </button>
+                </div>
+                <div class="mt-4 text-center">
+                  <h1 class="text-xs font-bold">Bagikan Software</h1>
+                  <div class="mt-2 inline-flex items-center space-x-1">
+                    <div class="i-logos-facebook"></div>
+                    <div class="i-mdi-twitter-circle text-xl text-blue"></div>
+                    <div class="i-entypo-social-linkedin-with-circle bg-#0077B5 text-lg"></div>
+                    <div class="rounded-full bg-red p-1 text-center">
+                      <div class="i-material-symbols-mail-rounded bg-white text-xs"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="flex flex-col border-1 border-green-600 rounded-4 p-8 shadow">
-              <div class="flex flex-col">
-                <div class="mb-4 flex items-center">
-                  <p class="mr-auto">Update Terakhir</p>
-                  <p>Rp. 000.000</p>
+            <div class="flex flex-col border-1 border-green-600 rounded-4 p-8 shadow space-y-4">
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold">Update Terakhir</p>
                 </div>
-                <div class="mb-4 flex items-center">
-                  <p class="mr-auto">Tanggal Rilis</p>
-                  <p>Rp. 000.000</p>
+                <div class="w-1/2">
+                  <p class="text-sm">Tanggal</p>
                 </div>
-                <div class="mb-4 flex items-center">
-                  <p class="mr-auto">Kategori</p>
-                  <p>Rp. 000.000</p>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold">Tanggal Rilis</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm">Tanggal</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold">Kategori</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm">Kategori 01</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold">Kompatibel</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm">Lorem Ipsum</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold">Tags</p>
+                </div>
+                <div class="w-1/2 flex-col">
+                  <p class="text-sm">Lorem Ipsum</p>
+                  <p class="text-sm">Lorem Ipsum</p>
+                  <p class="text-sm">Lorem Ipsum</p>
                 </div>
               </div>
             </div>
@@ -288,51 +375,6 @@ const expand = (index: number) => {
       </div>
     </div>
   </section>
-
-  <footer>
-    <div class="bg-footer">
-      <div class="container">
-        <div class="relative flex flex-wrap py-8 md:flex-nowrap space-y-4 md:space-x-6">
-          <div class="flex-col md:w-1/3 space-y-4">
-            <img class="max-h-8" src="@/assets/images/logo.png" />
-            <p class="text-sm text-white">
-              Point adalah Startup Milenial, tetapi bisnis modelnya konvensional. Point membangun
-              teknologi dengan sistem Open Source.
-            </p>
-          </div>
-          <div class="flex flex-wrap md:w-2/3 md:flex-nowrap space-y-4 md:space-x-4">
-            <div class="w-1/1 flex flex-col md:w-1/3 space-y-4">
-              <a class="text-sm text-white md:text-lg">Beranda</a>
-              <a class="text-sm text-white md:text-lg">Develv</a>
-              <a class="text-sm text-white md:text-lg">Marketplace</a>
-              <a class="text-sm text-white md:text-lg">Investor</a>
-            </div>
-            <div class="w-1/1 flex flex-col md:w-1/3 space-y-4">
-              <a class="text-sm text-white md:text-lg">Tentang Kami</a>
-              <a class="text-sm text-white md:text-lg">Bantuan</a>
-              <a class="text-sm text-white md:text-lg">Kontak</a>
-            </div>
-            <div class="w-1/1 flex flex-col md:w-1/3 space-y-4">
-              <p class="text-sm text-white md:text-lg">We are in Social</p>
-              <div class="flex text-sm text-green-600 space-x-6 md:text-xl">
-                <div class="i-cib-facebook-f"></div>
-                <div class="i-cib-instagram"></div>
-                <div class="i-cib-twitter"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bg-black">
-      <div class="flex-1 py-4">
-        <h1 class="text-center text-xs text-white md:text-sm">
-          Copyright ©2023 Point. All Right Reserved. <br class="md:hidden" />Please send bug report
-          and feedback to: Gradin Digital Agency
-        </h1>
-      </div>
-    </div>
-  </footer>
 </template>
 
 <style>

@@ -18,7 +18,7 @@
                 Beranda
               </router-link>
               <router-link class="text-sm text-white md:text-lg hover:text-yellow-400" :to="'/'">
-                Develv
+                Developer
               </router-link>
               <router-link
                 class="text-sm text-white md:text-lg hover:text-yellow-400"

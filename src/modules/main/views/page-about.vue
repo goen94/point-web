@@ -58,12 +58,8 @@ import BoxFaq from '../component/box-faq.vue'
           <div
             class="rounded-8 from-green-700 to-green-400 bg-gradient-to-r px-12 py-8 text-center md:px-32"
           >
-            <div class="inline-flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
-                <path fill="#fad100" d="m10 7l-2 4h3v6H5v-6l2-4h3m8 0l-2 4h3v6h-6v-6l2-4h3Z" />
-              </svg>
-            </div>
-            <h1 class="text-center text-lg text-white md:text-lg">
+            <div class="i-mdi-format-quote-open mx-auto text-5xl text-yellow-400"></div>
+            <h1 class="mb-4 text-center text-lg text-white md:text-lg">
               POINT memberikan <span class="text-yellow-400">Solusi Terintegrasi</span> untuk semua
               lini bisnis dan departemen yang ada di usaha anda."
             </h1>

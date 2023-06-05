@@ -19,4 +19,13 @@ html,
 body {
   max-width: 100%;
 }
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: local('Poppins-ExtraBold'), url(@/assets/font/Poppins-ExtraBold.ttf) format('truetype');
+}
 </style>

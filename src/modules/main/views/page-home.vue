@@ -55,8 +55,10 @@ import PointClient from '../component/point-client.vue'
               <div
                 class="absolute left-0 top-1/3 h-10 w-10 rotate-45 transform border-b-[0.5px] border-l-[0.5px] border-green-600 rounded-bl-1 bg-white -translate-x-1/2"
               ></div>
-              <div class="border-[0.5px] border-green-600 rounded-8 bg-white p-8">
-                <h1 class="text-sm font-bold text-black md:text-xl">
+              <div
+                class="mx-auto min-h-125px flex items-center border-[0.5px] border-green-600 rounded-8 bg-white p-8"
+              >
+                <h1 class="mx-auto text-left text-sm font-bold text-black md:text-lg">
                   Ingin Menggunakan Software, Tapi Bingung Mulainya Harus Darimana?
                 </h1>
               </div>
@@ -96,8 +98,10 @@ import PointClient from '../component/point-client.vue'
             <div
               class="absolute right-0 top-1/3 h-10 w-10 translate-x-1/2 rotate-45 transform border-r-[0.5px] border-t-[0.5px] border-green-600 rounded-bl-1 bg-white"
             ></div>
-            <div class="border-[0.5px] border-green-600 rounded-8 bg-white p-8">
-              <h1 class="text-sm font-bold text-black md:text-lg">
+            <div
+              class="mx-auto min-h-125px flex items-center border-[0.5px] border-green-600 rounded-8 bg-white p-8"
+            >
+              <h1 class="mx-auto text-left text-sm font-bold text-black md:text-lg">
                 Developer Bermasalah Ketika Proses Pembuatan Software?
               </h1>
             </div>
@@ -130,8 +134,10 @@ import PointClient from '../component/point-client.vue'
             <div
               class="absolute left-0 top-1/3 h-10 w-10 rotate-45 transform border-b-[0.5px] border-l-[0.5px] border-green-600 rounded-bl-1 bg-white -translate-x-1/2"
             ></div>
-            <div class="border-[0.5px] border-green-600 rounded-8 bg-white p-8">
-              <h1 class="text-sm font-bold text-black md:text-lg">
+            <div
+              class="mx-auto min-h-125px flex items-center border-[0.5px] border-green-600 rounded-8 bg-white p-8"
+            >
+              <h1 class="mx-auto text-left text-sm font-bold text-black md:text-lg">
                 Bisnis Semakin Berkembang, Tapi Softwarenya Ketinggalan?
               </h1>
             </div>
@@ -174,8 +180,10 @@ import PointClient from '../component/point-client.vue'
             <div
               class="absolute right-0 top-1/3 h-10 w-10 translate-x-1/2 rotate-45 transform border-r-[0.5px] border-t-[0.5px] border-green-600 rounded-bl-1 bg-white"
             ></div>
-            <div class="border-[0.5px] border-green-600 rounded-8 bg-white p-8">
-              <h1 class="text-sm font-bold text-black md:text-lg">
+            <div
+              class="mx-auto min-h-125px flex items-center border-[0.5px] border-green-600 rounded-8 bg-white p-8"
+            >
+              <h1 class="mx-auto text-left text-sm font-bold text-black md:text-lg">
                 Khawatir Dengan Keamanan Data Anda?
               </h1>
             </div>
@@ -204,14 +212,19 @@ import PointClient from '../component/point-client.vue'
     <div class="container">
       <div class="flex flex-wrap pt-16 md:flex-nowrap space-x-4 space-y-4 md:pt-16 md:space-y-0">
         <div class="flex-col px-4 md:w-1/2 space-y-4">
-          <div>
-            <img class="mx-auto h-60px -mb-4" src="@/assets/images/Observable.png" />
+          <div class="text-center">
+            <!-- <img class="mx-auto h-60px -mb-4" src="@/assets/images/Observable.png" /> -->
+            <h1 class="font-poppins mx-auto h-60px text-5xl text-white text-stroke -mb-6">
+              OBSERVABLE
+            </h1>
             <div class="relative text-center">
               <div
                 class="absolute left-0 top-1/3 h-10 w-10 rotate-45 transform border-b-[0.5px] border-l-[0.5px] border-green-600 rounded-bl-1 bg-white -translate-x-1/2"
               ></div>
-              <div class="border-[0.5px] border-green-600 rounded-8 bg-white p-8">
-                <h1 class="text-sm font-bold text-black md:text-lg">
+              <div
+                class="mx-auto min-h-125px flex items-center border-[0.5px] border-green-600 rounded-8 bg-white p-8"
+              >
+                <h1 class="mx-auto text-center text-sm font-bold text-black md:text-lg">
                   Menemui Kendala Saat Menggunakan Software
                 </h1>
               </div>
@@ -225,14 +238,18 @@ import PointClient from '../component/point-client.vue'
           </div>
         </div>
         <div class="flex-col px-4 md:w-1/2 space-y-4">
-          <div>
-            <img class="mx-auto h-60px -mb-4" src="@/assets/images/Reliable.png" />
-            <div class="relative text-center">
+          <div class="text-center">
+            <h1 class="font-poppins mx-auto h-60px text-5xl text-white text-stroke -mb-6">
+              RELIABLE
+            </h1>
+            <div class="relative min-h-125px text-center">
               <div
                 class="absolute right-0 top-1/3 h-10 w-10 translate-x-1/2 rotate-45 transform border-r-[0.5px] border-t-[0.5px] border-green-600 rounded-bl-1 bg-white"
               ></div>
-              <div class="border-[0.5px] border-green-600 rounded-8 bg-white p-8">
-                <h1 class="text-sm font-bold text-black md:text-lg">
+              <div
+                class="mx-auto min-h-125px flex items-center border-[0.5px] border-green-600 rounded-8 bg-white p-8"
+              >
+                <h1 class="mx-auto text-center text-sm font-bold text-black md:text-lg">
                   Software Tetap Bermasalah & Tidak Dapat diperbaiki?
                 </h1>
               </div>

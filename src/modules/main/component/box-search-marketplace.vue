@@ -8,13 +8,15 @@
       Tidak perlu khawatir! Jelajahi Marketplace kami untuk menemukan Software tersebut!
     </h1>
     <div class="flex">
-      <button
-        type="button"
-        class="mx-auto mt-4 inline-flex items-center rounded-8 bg-white px-3 py-3 text-sm font-bold text-green-600 md:mt-8 md:px-5 md:text-xl"
-      >
-        <div class="i-mdi-magnify mr-2"></div>
-        Cari di Point Marketplace
-      </button>
+      <router-link :to="'/marketplace'" class="mx-auto">
+        <button
+          type="button"
+          class="mt-4 inline-flex items-center rounded-8 bg-white px-3 py-3 text-sm font-bold text-green-600 md:mt-8 md:px-5 md:text-xl"
+        >
+          <div class="i-mdi-magnify mr-2"></div>
+          Cari di Point Marketplace
+        </button>
+      </router-link>
     </div>
   </div>
 </template>

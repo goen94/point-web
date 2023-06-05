@@ -48,6 +48,9 @@ export default defineConfig({
       //   100: '#22bb45',
       //   700: '#1f8b43'
       // }
+    },
+    fontFamily: {
+      'poppins': ['Poppins', 'ExtraBold']
     }
   },
   safelist: ['i-fad-house-chimney', 'i-fad-wand-magic-sparkles'],

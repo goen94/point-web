@@ -32,8 +32,11 @@ onMounted(() => {
     :class="[yOffset > 50 || path === '/detail' ? 'bg-green-700 shadow' : 'bg-transparent']"
   > -->
   <header
-    class="fixed top-0 z-50 w-full bg-green-700"
-    :class="[yOffset > 50 || path === '/detail' ? 'bg-green-700 shadow' : 'bg-transparent']"
+    class="top-0 z-50 w-full bg-green-700"
+    :class="[
+      yOffset > 50 || path === '/detail' ? 'bg-green-700 shadow' : 'bg-transparent',
+      path === '/detail' ? 'sticky' : 'fixed'
+    ]"
   >
     <div class="mx-auto flex py-6">
       <!-- Left Navigation -->
