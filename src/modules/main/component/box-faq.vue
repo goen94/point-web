@@ -9,12 +9,12 @@
             Ingin Bertanya Lebih Lanjut Tentang Software Point?
           </h1>
         </div>
-        <div class="mt-2 flex md:w-1/2 space-x-2 md:px-4">
+        <div class="mt-2 w-full flex md:w-1/2 space-x-2 md:px-4">
           <div class="w-1/2">
             <router-link :to="'/help'">
               <button
                 type="button"
-                class="inline-flex items-center rounded-8 bg-white px-5 py-2 text-xs font-bold text-green-700 md:text-lg"
+                class="inline-flex items-center rounded-8 bg-white px-5 py-2 text-2.5 font-bold text-green-700 md:text-lg"
               >
                 <div class="i-ph-question-bold mr-2"></div>
                 Pusat Bantuan
@@ -24,7 +24,7 @@
           <div class="w-1/2">
             <button
               type="button"
-              class="inline-flex items-center rounded-8 bg-white px-5 py-2 text-xs font-bold text-green-700 md:right-0 md:text-lg"
+              class="inline-flex items-center rounded-8 bg-white px-5 py-2 text-2.5 font-bold text-green-700 md:right-0 md:text-lg"
             >
               <div class="i-ic-baseline-whatsapp mr-2"></div>
               No Whatsapp

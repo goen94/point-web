@@ -13,7 +13,9 @@
               <a
                 class="relative flex items-center justify-center gap-2 border-b-2 px-1 py-3 hover:cursor-pointer hover:text-green-700"
                 :class="[
-                  activeTab === index ? 'border-green-700 text-green-700' : 'border-transparent'
+                  activeTab === index
+                    ? 'border-green-700 text-green-700'
+                    : 'text-gray-5 border-transparent'
                 ]"
                 @click="selectedTab(index)"
               >
@@ -26,7 +28,7 @@
       <div class="mx-auto max-w-screen flex md:max-w-90%">
         <div class="flex-none">
           <button
-            class="top-0 z-0 ml-2 h-full flex cursor-pointer items-center justify-center focus:outline-none"
+            class="top-0 z-0 mx-4 h-full flex cursor-pointer items-center justify-center focus:outline-none"
             @click="prev"
           >
             <span
@@ -37,7 +39,7 @@
           </button>
         </div>
         <div
-          class="no-scrollbar inner inline-flex snap-x gap-x-5 overflow-x-scroll scroll-smooth py-4"
+          class="no-scrollbar inner inline-flex grow snap-x gap-x-5 overflow-x-scroll scroll-smooth py-4"
           ref="inner"
         >
           <div
@@ -54,9 +56,9 @@
                 <img class="mx-auto max-h-50" src="@/assets/images/kopibara.png" />
               </div>
               <div class="w-full flex-col md:w-1/2 space-y-2">
-                <h1 class="hidden text-lg font-bold md:block">Kopi Bara</h1>
+                <h1 class="hidden text-lg font-bold text-black md:block">Kopi Bara</h1>
                 <h1 class="text-lg font-bold text-green-700">Solusi Pointhub:</h1>
-                <p class="text-sm">
+                <p class="text-sm text-gray-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                   exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -70,7 +72,7 @@
         </div>
         <div class="flex-none">
           <button
-            class="top-0 z-30 h-full flex cursor-pointer items-center justify-center px-4 focus:outline-none"
+            class="top-0 z-0 h-full flex cursor-pointer items-center justify-center px-4 focus:outline-none"
             @click="next"
           >
             <span

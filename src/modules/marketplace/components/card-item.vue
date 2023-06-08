@@ -7,17 +7,17 @@
       src="@/assets/images/No_Image_Available.jpg"
     />
     <div class="p-3 lg:p-8">
-      <h1 class="text-sm font-bold lg:text-lg">Nama Aplikasi</h1>
+      <h1 class="text-sm font-bold text-black lg:text-lg">Nama Aplikasi</h1>
       <h3 class="text-xs text-gray lg:text-sm">
         <i>oleh</i> <span class="font-medium">Nama Pengembang</span>
       </h3>
-      <p class="mt-2 text-xs lg:text-sm">
+      <p class="mt-2 text-xs text-gray-5 lg:text-sm">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.
       </p>
       <div class="grid grid-cols-2 mt-2">
         <div>
-          <h1 class="text-xs font-bold lg:text-lg">Rp. 000.000</h1>
+          <h1 class="text-xs font-bold text-black lg:text-lg">Rp. 000.000</h1>
           <div class="flex items-center lg:space-x-4">
             <router-link :to="'/detail'">
               <p class="text-2 font-bold text-green-700 lg:text-2.5">Detail Software</p>

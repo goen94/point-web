@@ -45,12 +45,10 @@ onMounted(() => {
   <section class="relative bg-green-50">
     <div class="container md:px-10%">
       <div class="flex-col py-10 text-center space-y-6 md:space-x-4">
-        <h1
-          class="items-center text-center text-3xl font-medium text-black md:text-5xl md:font-bold"
-        >
+        <h1 class="items-center text-center text-3xl font-bold text-black md:text-5xl">
           Pointhub <span class="text-orange-400">Marketplace</span>
         </h1>
-        <h6 class="mt-4 text-center text-xs md:text-base">
+        <h6 class="mt-4 text-center text-xs text-gray-5 md:text-base">
           Jelajahi software yang dibuat oleh para developer/pengembang global, dengan jaminan bahwa
           software tersebut telah melalui peninjauan Tim Pointhub.
         </h6>

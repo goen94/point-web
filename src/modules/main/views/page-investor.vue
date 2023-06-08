@@ -1,16 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-const expIndex = ref(-1)
-const expand = (index: number) => {
-  if (index == expIndex.value) {
-    expIndex.value = -1
-  } else {
-    expIndex.value = index
-  }
-}
-</script>
-
 <template>
   <section>
     <div class="bg-header md:bg-[100%] relative h-full min-h-300px bg-cover md:min-h-400px">
@@ -41,7 +28,7 @@ const expand = (index: number) => {
               <span class="text-orange-5">Stealth Mode.</span>
             </h1>
             <img class="ml-auto md:hidden" src="@/assets/images/Thumbnail-Developer.png" />
-            <p class="text-center text-sm md:text-start md:text-lg">
+            <p class="text-center text-sm text-gray-5 md:text-start md:text-lg">
               Mengacu pada keputusan perusahaan untuk tidak mempublikasikan secara masif mengenai
               bisnis dan rencana kami kepada publik. Hal ini memungkinkan kami menghindari
               publisistas dini dan mempertahankan kendali atas kekayaan intelektual yang kami
@@ -62,7 +49,7 @@ const expand = (index: number) => {
   </section>
 
   <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-white px-4 pb-25 -m-4 md:rounded-b-[30%]">
+    <div class="relative rounded-b-[15%] bg-white px-4 pb-25 md:rounded-b-[30%]">
       <div class="container">
         <div class="flex">
           <div class="relative w-full -mb-45 md:mt-10 md:-mb-40">

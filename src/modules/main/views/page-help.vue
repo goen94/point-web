@@ -64,11 +64,11 @@ const expand = (index: number) => {
       <div class="divide-y-2">
         <div class="flex py-6" v-for="idx in 4" :key="idx">
           <div class="flex-none">
-            <h5 class="font-bold">{{ idx }}.</h5>
+            <h5 class="font-bold text-black">{{ idx }}.</h5>
           </div>
           <div class="ml-6 grow">
-            <h5 class="font-bold">Apa saya bisa memakai satu software saja?</h5>
-            <p class="mt-4" :class="{ hidden: expIndex != idx }">
+            <h5 class="font-bold text-black">Apa saya bisa memakai satu software saja?</h5>
+            <p class="mt-4 text-black" :class="{ hidden: expIndex != idx }">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -89,7 +89,7 @@ const expand = (index: number) => {
   </section>
 
   <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-white px-4 pb-25 -m-4 md:rounded-b-[30%]">
+    <div class="relative rounded-b-[15%] bg-white px-4 pb-25 md:rounded-b-[30%]">
       <div class="container">
         <div class="flex">
           <div class="relative mt-10 w-full -mb-45 md:-mb-40">

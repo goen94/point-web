@@ -105,6 +105,7 @@ onMounted(() => {
     <div class="absolute w-full bg-green-700 md:hidden" :class="{ hidden: !showMobile }">
       <div class="py-2 space-y-2" role="none">
         <router-link
+          @click="toggleMobile(!showMobile)"
           class="nav-text block hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/' }"
           :to="'/'"
@@ -113,6 +114,7 @@ onMounted(() => {
         </router-link>
         <a class="nav-text block">Developer</a>
         <router-link
+          @click="toggleMobile(!showMobile)"
           class="nav-text block hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/marketplace' }"
           :to="'/marketplace'"
@@ -120,6 +122,7 @@ onMounted(() => {
           Marketplace
         </router-link>
         <router-link
+          @click="toggleMobile(!showMobile)"
           class="nav-text block hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/investor' }"
           :to="'/investor'"
@@ -127,6 +130,7 @@ onMounted(() => {
           Investor
         </router-link>
         <router-link
+          @click="toggleMobile(!showMobile)"
           class="nav-text block hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/help' }"
           :to="'/help'"
@@ -134,6 +138,7 @@ onMounted(() => {
           Bantuan
         </router-link>
         <router-link
+          @click="toggleMobile(!showMobile)"
           class="nav-text block hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/signup' }"
           :to="'/signup'"

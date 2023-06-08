@@ -29,13 +29,16 @@ const expand = (index: number) => {
           <p class="mx-auto text-sm">Logo Aplikasi</p>
         </div>
         <div class="w-full text-center md:w-3/6 md:flex-col space-y-2 md:text-left">
-          <h1 class="items-center text-5xl font-medium text-black md:font-bold">
+          <h1 class="items-center text-4xl font-medium text-black md:text-5xl md:font-bold">
             Nama <span class="text-orange-500">Software</span>
           </h1>
-          <h1 class="text-xl font-medium">Oleh <a class="text-blue-600" href="#">Pengembang</a></h1>
+          <h1 class="text-xl font-medium text-gray-5">
+            Oleh <a class="text-blue-600" href="#">Pengembang</a>
+          </h1>
           <div class="inline-flex items-center">
             <h1 class="text-lg">
-              <span class="font-bold">00+</span> <span class="font-medium">Sales |</span>&nbsp;
+              <span class="font-bold text-gray-5">00+</span>
+              <span class="font-medium text-gray-5">Sales |</span>&nbsp;
             </h1>
             <div class="inline-flex">
               <div class="i-ic-outline-star text-gray-300"></div>
@@ -44,7 +47,7 @@ const expand = (index: number) => {
               <div class="i-ic-outline-star text-yellow-400"></div>
               <div class="i-ic-outline-star text-yellow-400"></div>
             </div>
-            <h1 class="text-lg font-medium">&nbsp;(00)</h1>
+            <h1 class="text-lg font-medium text-gray-5">&nbsp;(00)</h1>
           </div>
         </div>
         <div class="w-full text-center md:w-2/6">
@@ -96,12 +99,12 @@ const expand = (index: number) => {
               class="max-h-[500px] w-full rounded-lg object-cover"
               src="@/assets/images/No_Image_Available.jpg"
             />
-            <p>
+            <p class="text-gray-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p>
+            <p class="text-gray-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -110,8 +113,8 @@ const expand = (index: number) => {
 
           <div v-if="activeTab == 1" class="w-full flex-col md:w-2/3 space-y-4">
             <div class="pb-6 space-y-4">
-              <h1 class="text-sm font-bold">* Halaman Utama</h1>
-              <p>
+              <h1 class="text-sm font-bold text-black">* Halaman Utama</h1>
+              <p class="text-gray-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -123,8 +126,8 @@ const expand = (index: number) => {
             </div>
             <div class="h-px flex-grow bg-gray-400"></div>
             <div class="py-6 space-y-4">
-              <h1 class="text-sm font-bold">Halaman _____</h1>
-              <p>
+              <h1 class="text-sm font-bold text-black">Halaman _____</h1>
+              <p class="text-gray-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -209,8 +212,8 @@ const expand = (index: number) => {
                   <h5 class="font-bold">{{ idx }}.</h5>
                 </div>
                 <div class="ml-6 grow">
-                  <h5 class="font-bold">Apa saya bisa memakai satu software saja?</h5>
-                  <p class="mt-4" :class="{ hidden: expIndex != idx }">
+                  <h5 class="font-bold text-gray">Apa saya bisa memakai satu software saja?</h5>
+                  <p class="mt-4 text-gray" :class="{ hidden: expIndex != idx }">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -234,13 +237,7 @@ const expand = (index: number) => {
               <div class="flex flex-col">
                 <div class="mb-2">
                   <div v-for="radio in 3" :key="radio" class="mb-4 flex items-center">
-                    <input
-                      id="default-radio-1"
-                      type="radio"
-                      value=""
-                      name="default-radio"
-                      class="h-4 w-4 border-gray-300 bg-gray-100 accent-green-600"
-                    />
+                    <input type="radio" class="h-4 w-4 accent-green-600" />
                     <label
                       for="default-radio-1"
                       class="ml-2 text-sm font-bold text-gray-900 dark:text-gray-300"
@@ -253,7 +250,9 @@ const expand = (index: number) => {
                 <div>
                   <div v-for="item in 3" :key="item" class="mb-4 inline-flex items-center">
                     <div class="i-ic-outline-check mr-2 text-green-600"></div>
-                    <h1 class="text-xs font-medium">Fasilitas/Keunggulan Software 0{{ item }}</h1>
+                    <h1 class="text-xs font-medium text-gray">
+                      Fasilitas/Keunggulan Software 0{{ item }}
+                    </h1>
                   </div>
                 </div>
                 <div>
@@ -265,7 +264,7 @@ const expand = (index: number) => {
                   </button>
                 </div>
                 <div class="mt-4 text-center">
-                  <h1 class="text-xs font-bold">Bagikan Software</h1>
+                  <h1 class="text-xs font-bold text-gray-5">Bagikan Software</h1>
                   <div class="mt-2 inline-flex items-center space-x-1">
                     <div class="i-logos-facebook"></div>
                     <div class="i-mdi-twitter-circle text-xl text-blue"></div>
@@ -280,44 +279,44 @@ const expand = (index: number) => {
             <div class="flex flex-col border-1 border-green-600 rounded-4 p-8 shadow space-y-4">
               <div class="flex space-x-2">
                 <div class="w-1/2">
-                  <p class="text-sm font-bold">Update Terakhir</p>
+                  <p class="text-sm font-bold text-gray">Update Terakhir</p>
                 </div>
                 <div class="w-1/2">
-                  <p class="text-sm">Tanggal</p>
-                </div>
-              </div>
-              <div class="flex space-x-2">
-                <div class="w-1/2">
-                  <p class="text-sm font-bold">Tanggal Rilis</p>
-                </div>
-                <div class="w-1/2">
-                  <p class="text-sm">Tanggal</p>
+                  <p class="text-sm text-gray">Tanggal</p>
                 </div>
               </div>
               <div class="flex space-x-2">
                 <div class="w-1/2">
-                  <p class="text-sm font-bold">Kategori</p>
+                  <p class="text-sm font-bold text-gray">Tanggal Rilis</p>
                 </div>
                 <div class="w-1/2">
-                  <p class="text-sm">Kategori 01</p>
-                </div>
-              </div>
-              <div class="flex space-x-2">
-                <div class="w-1/2">
-                  <p class="text-sm font-bold">Kompatibel</p>
-                </div>
-                <div class="w-1/2">
-                  <p class="text-sm">Lorem Ipsum</p>
+                  <p class="text-sm text-gray">Tanggal</p>
                 </div>
               </div>
               <div class="flex space-x-2">
                 <div class="w-1/2">
-                  <p class="text-sm font-bold">Tags</p>
+                  <p class="text-sm font-bold text-gray">Kategori</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm text-gray">Kategori 01</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold text-gray">Kompatibel</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm text-gray">Lorem Ipsum</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold text-gray">Tags</p>
                 </div>
                 <div class="w-1/2 flex-col">
-                  <p class="text-sm">Lorem Ipsum</p>
-                  <p class="text-sm">Lorem Ipsum</p>
-                  <p class="text-sm">Lorem Ipsum</p>
+                  <p class="text-sm text-gray">Lorem Ipsum</p>
+                  <p class="text-sm text-gray">Lorem Ipsum</p>
+                  <p class="text-sm text-gray">Lorem Ipsum</p>
                 </div>
               </div>
             </div>
@@ -342,8 +341,8 @@ const expand = (index: number) => {
     </div>
   </section>
 
-  <section class="overflow-hidden bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-light pb-25 -m-4 md:rounded-b-[30%]">
+  <section class="bg-black pb-20 md:pb-14">
+    <div class="relative rounded-b-[15%] bg-light px-4 pb-25 md:rounded-b-[40%]">
       <div class="container">
         <div class="flex">
           <div class="relative mt-10 w-full -mb-45 md:-mb-40">
