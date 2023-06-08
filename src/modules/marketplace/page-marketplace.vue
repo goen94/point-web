@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import cardItem from './components/card-item.vue'
-import slider from './components/slider.vue'
 import sliderItem from './components/slider-item.vue'
 
 const yOffset = ref(0)
-const arrItems = ref(4)
+const sortVisible = ref(false)
 
 const vueOnScroll = () => {
   window.addEventListener('scroll', () => {
     var curr = window.pageYOffset
     yOffset.value = curr
   })
+}
+
+const showSort = () => {
+  sortVisible.value = !sortVisible.value
 }
 
 onMounted(() => {
@@ -21,12 +24,12 @@ onMounted(() => {
 
 <template>
   <section>
-    <div class="bg-header md:bg-[100%] relative h-full bg-cover">
+    <div class="bg-header lg:bg-[100%] relative h-full bg-cover">
       <div class="relative container">
         <div class="flex flex-wrap pt-50px md:flex-nowrap space-x-4 space-y-4 md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
-              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left md:text-4xl"
+              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left lg:text-4xl"
             >
               Jelajahi Software Sesuai Dengan Kebutuhan Anda
             </h1>
@@ -73,52 +76,6 @@ onMounted(() => {
                 <div class="i-mdi-chevron-down ml-8 text-lg"></div>
               </button>
             </div>
-            <div
-              class="absolute right-0 z-10 mt-2 hidden w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="menu-button"
-              tabindex="-1"
-            >
-              <div class="py-1" role="none">
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  >Account settings</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  >Support</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-2"
-                  >License</a
-                >
-                <form method="POST" action="#" role="none">
-                  <button
-                    type="submit"
-                    class="text-gray-700 block w-full px-4 py-2 text-left text-sm"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-3"
-                  >
-                    Sign out
-                  </button>
-                </form>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -126,7 +83,7 @@ onMounted(() => {
   </section>
 
   <section class="relative bg-white">
-    <div class="container">
+    <div class="mx-auto md:w-75%">
       <div class="flex flex-wrap py-6 md:flex-nowrap md:py-8 md:divide-x-2 md:divide-gray">
         <div class="w-1/1 md:mr-2 md:w-1/5 md:flex-col md:divide-y">
           <div class="flex items-center py-2 text-green-600">
@@ -134,47 +91,38 @@ onMounted(() => {
             <span class="mr-auto">Filter</span>
           </div>
           <div class="hidden flex-col py-4 md:block">
-            Kategori Software
+            <h1 class="text-xs lg:text-sm">Kategori Software</h1>
             <div class="mt-4 flex-col space-y-4">
               <div class="mb-4 flex items-center">
                 <input
-                  id="default-radio-1"
                   type="radio"
-                  value=""
-                  name="default-radio"
                   class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
                 />
                 <label
                   for="default-radio-1"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
                   >Kategori 1</label
                 >
               </div>
               <div class="mb-4 flex items-center">
                 <input
-                  id="default-radio-1"
                   type="radio"
-                  value=""
-                  name="default-radio"
                   class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
                 />
                 <label
                   for="default-radio-1"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
                   >Kategori 1</label
                 >
               </div>
               <div class="mb-4 flex items-center">
                 <input
-                  id="default-radio-1"
                   type="radio"
-                  value=""
-                  name="default-radio"
                   class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
                 />
                 <label
                   for="default-radio-1"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
                   >Kategori 1</label
                 >
               </div>
@@ -185,18 +133,33 @@ onMounted(() => {
           <div class="flex">
             <div class="ml-auto hidden md:block">
               <button
-                id="dropdownDefaultButton"
-                data-dropdown-toggle="dropdown"
                 class="bg-white-700 inline-flex items-center border border-green-500 rounded-8 px-4 py-2.5 text-center text-sm font-medium text-green-700"
                 type="button"
+                @click="showSort()"
               >
                 Urut Berdasarkan
                 <div class="i-mdi-chevron-down ml-8 text-green-700"></div>
               </button>
+              <div
+                class="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+                :class="[sortVisible ? 'block' : 'hidden']"
+              >
+                <div class="py-1">
+                  <a
+                    v-for="sort in 3"
+                    :key="sort"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:cursor-pointer hover:bg-light"
+                  >
+                    Sort {{ sort }}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="grid mt-10 justify-between gap-x-6 gap-y-8 md:grid-cols-2 md:ml-6">
+          <div
+            class="grid grid-cols-2 mx-2 mt-10 justify-between gap-x-2 gap-y-2 md:ml-6 md:gap-x-6 md:gap-y-8"
+          >
             <cardItem />
             <cardItem />
             <cardItem />
@@ -231,9 +194,9 @@ onMounted(() => {
           </h1>
           <div class="flex-grow bg-gray-400 md:h-px"></div>
         </div>
-        <sliderItem />
       </div>
     </div>
+    <sliderItem />
     <!-- <div class="container">
       <div class="flex-col">
         <div class="mt-16 flex items-center py-4">
@@ -251,7 +214,7 @@ onMounted(() => {
   <section class="bg-light pb-10"></section>
 
   <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-light px-4 pb-25 -m-4 md:rounded-b-[30%]">
+    <div class="relative rounded-b-[15%] bg-light px-4 pb-25 md:rounded-b-[40%]">
       <div class="container">
         <div class="flex">
           <div class="relative mt-10 w-full -mb-45 md:-mb-40">
@@ -284,7 +247,6 @@ onMounted(() => {
 
 <style>
 .bg-header {
-  min-height: 400px;
   background-image: url('@/assets/images/Banner-About.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;

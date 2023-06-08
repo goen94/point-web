@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import sliderItem from './components/slider-item.vue'
-import slider from './components/slider.vue'
-import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 const tabs = ref(['Detail Software', 'Screenshots', 'Rating & Reviews', 'Pusat Bantuan'])
 const activeTab = ref(0)
@@ -331,8 +328,8 @@ const expand = (index: number) => {
   </section>
 
   <section class="relative bg-light py-10">
-    <div class="container">
-      <div class="flex-col">
+    <div class="flex-col">
+      <div class="container">
         <div class="flex items-center py-4">
           <div class="flex-grow bg-gray-400 md:h-px"></div>
           <h1 class="title mx-4 text-center text-3xl font-bold text-black md:text-5xl">
@@ -340,13 +337,13 @@ const expand = (index: number) => {
           </h1>
           <div class="flex-grow bg-gray-400 md:h-px"></div>
         </div>
-        <sliderItem />
       </div>
+      <sliderItem />
     </div>
   </section>
 
-  <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-light px-4 pb-25 -m-4 md:rounded-b-[30%]">
+  <section class="overflow-hidden bg-black pb-20 md:pb-14">
+    <div class="relative rounded-b-[15%] bg-light pb-25 -m-4 md:rounded-b-[30%]">
       <div class="container">
         <div class="flex">
           <div class="relative mt-10 w-full -mb-45 md:-mb-40">

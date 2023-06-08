@@ -1,23 +1,26 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="grid mx-4 overflow-hidden rounded-lg shadow-lg">
-    <img class="max-h-250px w-full object-cover" src="@/assets/images/No_Image_Available.jpg" />
-    <div class="p-6 md:p-8">
-      <h1 class="text-lg font-bold">Nama Aplikasi</h1>
-      <h3 class="text-sm text-gray">
+  <div class="grid overflow-hidden rounded-lg shadow-lg">
+    <img
+      class="max-h-150px w-full object-cover lg:max-h-250px"
+      src="@/assets/images/No_Image_Available.jpg"
+    />
+    <div class="p-3 lg:p-8">
+      <h1 class="text-sm font-bold lg:text-lg">Nama Aplikasi</h1>
+      <h3 class="text-xs text-gray lg:text-sm">
         <i>oleh</i> <span class="font-medium">Nama Pengembang</span>
       </h3>
-      <p class="mt-2 text-sm">
+      <p class="mt-2 text-xs lg:text-sm">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua.
       </p>
       <div class="grid grid-cols-2 mt-2">
         <div>
-          <h1 class="text-lg font-bold">Rp. 000.000</h1>
-          <div class="flex items-center space-x-4">
+          <h1 class="text-xs font-bold lg:text-lg">Rp. 000.000</h1>
+          <div class="flex items-center lg:space-x-4">
             <router-link :to="'/detail'">
-              <p class="text-2.5 font-bold text-green-700">Detail Software</p>
+              <p class="text-2 font-bold text-green-700 lg:text-2.5">Detail Software</p>
             </router-link>
             <div class="i-mdi-chevron-right text-green-700"></div>
           </div>
@@ -26,7 +29,7 @@
           <router-link :to="'/signup'">
             <button
               type="button"
-              class="border border-orange-500 rounded-8 bg-white px-2 py-2 text-xs font-bold text-orange-500"
+              class="border border-orange-500 rounded-8 bg-white px-2 py-2 text-2 font-bold text-orange-500 lg:text-xs"
             >
               COBA GRATIS!
             </button>

@@ -7,12 +7,12 @@ import BoxFaq from '../component/box-faq.vue'
 
 <template>
   <section>
-    <div class="bg-header md:bg-[100%] relative h-full bg-cover">
+    <div class="bg-header lg:bg-[100%] relative h-full bg-cover">
       <div class="relative container">
         <div class="flex flex-wrap pt-30px md:flex-nowrap md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
-              class="mx-auto px-4 pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left md:text-4xl"
+              class="mx-auto px-4 pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left lg:text-4xl"
             >
               Penyedia Sistem Software Fleksibel & Terintegrasi
             </h1>

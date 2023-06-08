@@ -9,7 +9,7 @@ import PointClient from '../component/point-client.vue'
   <section class="overflow-hidden bg-green-50">
     <div class="clip-container relative min-h-50vh rounded-b-[50%] -mx-40 md:min-h-100vh">
       <div class="h-full w-full place-items-center justify-center text-center">
-        <p class="px-6 text-sm text-yellow-500 pt-30 md:px-0 md:pt-60 md:text-4xl">
+        <p class="px-6 pt-30 text-sm text-yellow-500 md:px-0 md:pt-60 md:text-4xl">
           Solusi Sistem Software Fleksibel & Terintegrasi
         </p>
         <h1 class="text-3xl font-bold text-white lg:text-8xl md:text-6xl">
@@ -48,7 +48,33 @@ import PointClient from '../component/point-client.vue'
           Standar produk dan jasa yang kami terapkan dan jadi pembeda Pointhub dengan layanan
           lainnya
         </h1>
-        <img src="@/assets/images/6-Icon-Standart-Point-Desktop.png" />
+        <img class="hidden md:block" src="@/assets/images/6-Icon-Standart-Point-Desktop.png" />
+        <div class="grid grid-cols-3 md:hidden space-y-2">
+          <div class="space-y-2">
+            <img class="max-w-25" src="@/assets/images/Icon-Usable.png" />
+            <h1 class="text-center text-sm font-bold">Usable</h1>
+          </div>
+          <div class="space-y-2">
+            <img class="max-w-25" src="@/assets/images/Icon-Mantainable.png" />
+            <h1 class="text-center text-sm font-bold">Maintainable</h1>
+          </div>
+          <div class="space-y-2">
+            <img class="max-w-25" src="@/assets/images/Icon-Scalable.png" />
+            <h1 class="text-center text-sm font-bold">Scalable</h1>
+          </div>
+          <div class="space-y-2">
+            <img class="max-w-25" src="@/assets/images/Icon-Observable.png" />
+            <h1 class="text-center text-sm font-bold">Observable</h1>
+          </div>
+          <div class="space-y-2">
+            <img class="max-w-25" src="@/assets/images/Icon-Secure.png" />
+            <h1 class="text-center text-sm font-bold">Secure</h1>
+          </div>
+          <div class="space-y-2">
+            <img class="max-w-25" src="@/assets/images/Icon-Reliable.png" />
+            <h1 class="text-center text-sm font-bold">Reliable</h1>
+          </div>
+        </div>
         <div class="mx-auto flex flex-wrap-reverse pt-10 md:flex-nowrap space-x-4">
           <div class="flex-col px-4 md:w-1/2 space-y-6">
             <div class="relative items-center">
@@ -290,9 +316,9 @@ import PointClient from '../component/point-client.vue'
           <div class="grow flex-col text-center space-y-4 md:text-left">
             <div class="flex items-center">
               <img class="ml-auto mr-4 h-10 w-10 md:hidden" src="@/assets/images/Developer.png" />
-              <h1 class="mr-auto text-3xl font-bold">Developer</h1>
+              <h1 class="mr-auto text-3xl font-bold text-black">Developer</h1>
             </div>
-            <p class="text-sm">
+            <p class="text-sm text-black">
               Point Kolaborasi adalah platform cloud gratis bagi pengembang untuk membuat aplikasi
               cloud yang siap diterapkan di platform Kami.
             </p>
@@ -308,9 +334,12 @@ import PointClient from '../component/point-client.vue'
           <div class="grow flex-col text-center space-y-4 md:text-left">
             <div class="flex text-center">
               <img class="ml-auto mr-4 h-10 w-10 md:hidden" src="@/assets/images/Investor.png" />
-              <h1 class="mr-auto text-3xl font-bold">Investor</h1>
+              <h1 class="mr-auto text-3xl font-bold text-black">Investor</h1>
             </div>
-            <p class="text-sm">Lorem ipsum dolor sit amet,</p>
+            <p class="text-sm text-black">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
             <div class="mt-6">
               <router-link :to="'/investor'">
                 <p class="text-sm font-bold text-orange-500">Pelajari Selengkapnya</p>

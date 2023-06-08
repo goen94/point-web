@@ -55,6 +55,6 @@ export default defineConfig({
   },
   safelist: ['i-fad-house-chimney', 'i-fad-wand-magic-sparkles'],
   shortcuts: {
-    'nav-text': 'mx-8 text-white font-500'
+    'nav-text': 'mx-4 lg:mx-8 text-white font-500'
   }
 })

@@ -18,7 +18,7 @@ const expand = (index: number) => {
         <div class="flex flex-wrap pt-30px md:flex-nowrap space-x-4 space-y-4 md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
-              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left md:text-4xl"
+              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left lg:text-4xl"
             >
               Dapatkan Informasi Detail Tentang Software Kami
             </h1>
@@ -118,7 +118,6 @@ const expand = (index: number) => {
 
 <style>
 .bg-header {
-  min-height: 400px;
   background-image: url('@/assets/images/Banner-About.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
