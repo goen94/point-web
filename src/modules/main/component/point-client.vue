@@ -29,10 +29,10 @@
         <div class="flex-none">
           <button
             class="top-0 z-0 mx-4 h-full flex cursor-pointer items-center justify-center focus:outline-none"
-            @click="prev"
           >
             <span
               class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-gray-200"
+              @click="prev"
             >
               <div class="i-mdi-chevron-left text-white"></div>
             </span>
@@ -51,7 +51,7 @@
             <div
               class="mt-10 flex flex-wrap justify-between gap-x-6 gap-y-4 text-center md:flex-nowrap md:text-left"
             >
-              <h1 class="w-full text-lg font-bold md:hidden">Kopi Bara</h1>
+              <h1 class="w-full text-lg font-bold text-black md:hidden">Kopi Bara</h1>
               <div class="w-full items-center md:w-1/2">
                 <img class="mx-auto max-h-50" src="@/assets/images/kopibara.png" />
               </div>
@@ -73,10 +73,10 @@
         <div class="flex-none">
           <button
             class="top-0 z-0 h-full flex cursor-pointer items-center justify-center px-4 focus:outline-none"
-            @click="next"
           >
             <span
               class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-gray-200"
+              @click="next"
             >
               <div class="i-mdi-chevron-right text-white"></div>
             </span>

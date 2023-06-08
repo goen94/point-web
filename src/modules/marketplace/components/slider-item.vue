@@ -3,9 +3,11 @@
     <div class="flex-none">
       <button
         class="top-0 z-0 h-full flex cursor-pointer items-center justify-center px-4 focus:outline-none"
-        @click="prev"
       >
-        <span class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-gray-200">
+        <span
+          class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-gray-200"
+          @click="prev"
+        >
           <div class="i-mdi-chevron-left text-white"></div>
         </span>
       </button>
@@ -26,9 +28,11 @@
     <div class="hidden flex-none md:block">
       <button
         class="top-0 z-30 h-full flex cursor-pointer items-center justify-center px-4 focus:outline-none"
-        @click="next"
       >
-        <span class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-gray-200">
+        <span
+          class="h-10 w-10 inline-flex items-center justify-center rounded-full bg-gray-200"
+          @click="next"
+        >
           <div class="i-mdi-chevron-right text-white"></div>
         </span>
       </button>

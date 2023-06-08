@@ -212,8 +212,8 @@ const expand = (index: number) => {
                   <h5 class="font-bold">{{ idx }}.</h5>
                 </div>
                 <div class="ml-6 grow">
-                  <h5 class="font-bold text-gray">Apa saya bisa memakai satu software saja?</h5>
-                  <p class="mt-4 text-gray" :class="{ hidden: expIndex != idx }">
+                  <h5 class="font-bold text-black">Apa saya bisa memakai satu software saja?</h5>
+                  <p class="mt-4 text-black" :class="{ hidden: expIndex != idx }">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -238,10 +238,7 @@ const expand = (index: number) => {
                 <div class="mb-2">
                   <div v-for="radio in 3" :key="radio" class="mb-4 flex items-center">
                     <input type="radio" class="h-4 w-4 accent-green-600" />
-                    <label
-                      for="default-radio-1"
-                      class="ml-2 text-sm font-bold text-gray-900 dark:text-gray-300"
-                    >
+                    <label for="default-radio-1" class="ml-2 text-sm font-bold text-black">
                       Harga Software
                     </label>
                     <p class="ml-auto font-bold text-green-600">Rp. 000.000</p>
@@ -264,7 +261,7 @@ const expand = (index: number) => {
                   </button>
                 </div>
                 <div class="mt-4 text-center">
-                  <h1 class="text-xs font-bold text-gray-5">Bagikan Software</h1>
+                  <h1 class="text-xs font-bold text-black">Bagikan Software</h1>
                   <div class="mt-2 inline-flex items-center space-x-1">
                     <div class="i-logos-facebook"></div>
                     <div class="i-mdi-twitter-circle text-xl text-blue"></div>
@@ -279,44 +276,44 @@ const expand = (index: number) => {
             <div class="flex flex-col border-1 border-green-600 rounded-4 p-8 shadow space-y-4">
               <div class="flex space-x-2">
                 <div class="w-1/2">
-                  <p class="text-sm font-bold text-gray">Update Terakhir</p>
+                  <p class="text-sm font-bold text-black">Update Terakhir</p>
                 </div>
                 <div class="w-1/2">
-                  <p class="text-sm text-gray">Tanggal</p>
-                </div>
-              </div>
-              <div class="flex space-x-2">
-                <div class="w-1/2">
-                  <p class="text-sm font-bold text-gray">Tanggal Rilis</p>
-                </div>
-                <div class="w-1/2">
-                  <p class="text-sm text-gray">Tanggal</p>
+                  <p class="text-sm text-black">Tanggal</p>
                 </div>
               </div>
               <div class="flex space-x-2">
                 <div class="w-1/2">
-                  <p class="text-sm font-bold text-gray">Kategori</p>
+                  <p class="text-sm font-bold text-black">Tanggal Rilis</p>
                 </div>
                 <div class="w-1/2">
-                  <p class="text-sm text-gray">Kategori 01</p>
-                </div>
-              </div>
-              <div class="flex space-x-2">
-                <div class="w-1/2">
-                  <p class="text-sm font-bold text-gray">Kompatibel</p>
-                </div>
-                <div class="w-1/2">
-                  <p class="text-sm text-gray">Lorem Ipsum</p>
+                  <p class="text-sm text-black">Tanggal</p>
                 </div>
               </div>
               <div class="flex space-x-2">
                 <div class="w-1/2">
-                  <p class="text-sm font-bold text-gray">Tags</p>
+                  <p class="text-sm font-bold text-black">Kategori</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm text-black">Kategori 01</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold text-black">Kompatibel</p>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-sm text-black">Lorem Ipsum</p>
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                <div class="w-1/2">
+                  <p class="text-sm font-bold text-black">Tags</p>
                 </div>
                 <div class="w-1/2 flex-col">
-                  <p class="text-sm text-gray">Lorem Ipsum</p>
-                  <p class="text-sm text-gray">Lorem Ipsum</p>
-                  <p class="text-sm text-gray">Lorem Ipsum</p>
+                  <p class="text-sm text-black">Lorem Ipsum</p>
+                  <p class="text-sm text-black">Lorem Ipsum</p>
+                  <p class="text-sm text-black">Lorem Ipsum</p>
                 </div>
               </div>
             </div>
