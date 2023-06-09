@@ -25,7 +25,7 @@
           </ul>
         </div>
       </div>
-      <div class="mx-auto max-w-screen flex md:max-w-90%">
+      <div class="mx-auto max-w-screen flex lg:max-w-80% md:max-w-90%">
         <div class="flex-none">
           <button
             class="top-0 z-0 mx-4 h-full flex cursor-pointer items-center justify-center focus:outline-none"

@@ -26,6 +26,13 @@ export default defineConfig({
             weights: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
             italic: true
           }
+        ],
+        poppins: [
+          {
+            name: 'Poppins',
+            weights: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+            italic: true
+          }
         ]
       }
     }),
@@ -49,9 +56,6 @@ export default defineConfig({
       //   700: '#1f8b43'
       // }
     },
-    fontFamily: {
-      'poppins': ['Poppins', 'ExtraBold']
-    }
   },
   safelist: ['i-fad-house-chimney', 'i-fad-wand-magic-sparkles'],
   shortcuts: {
