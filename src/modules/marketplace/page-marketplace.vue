@@ -52,7 +52,7 @@ onMounted(() => {
         <div class="flex flex-wrap pt-50px md:flex-nowrap space-x-4 space-y-4 md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
-              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left lg:text-5xl"
+              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left xl:text-5xl"
             >
               Jelajahi Software Sesuai Dengan Kebutuhan Anda
             </h1>
@@ -130,7 +130,7 @@ onMounted(() => {
   </section>
 
   <section class="relative bg-white">
-    <div class="mx-auto md:w-75% lg:w-50%">
+    <div class="mx-auto md:w-75% xl:w-50%">
       <div class="flex flex-wrap py-6 md:flex-nowrap md:py-8 md:divide-x-2 md:divide-gray">
         <div class="w-1/1 md:mr-2 md:w-1/5 md:flex-col md:divide-y">
           <div class="flex items-center py-2 text-green-600">
