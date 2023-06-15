@@ -25,7 +25,7 @@ export const usePointSoftware = defineStore('point-software', {
         title: 'Key Performance Indicator',
         subTitle: 'Monitoring Kinerja Karywan dan Target Bisnis Jadi Lebih Mudah!',
         detail: 'Pantau performa karyawan dalam mencapai target secara transparan dan detail. Bukti pekerjaan dan laporan dapat terpantau lebih mudah dengan point KPI. Dilengkapi dengan fitur feedback untuk peningkatan dan perbaikan kinerja',
-        images: ['src/assets/images/No_Image_Available.jpg', 'src/assets/images/No_Image_Available.jpg', 'src/assets/images/No_Image_Available.jpg'],
+        images: ['/assets/No_Image_Available.jpg', '/assets/No_Image_Available.jpg', '/assets/No_Image_Available.jpg'],
         link: '/marketplace',
     },
   }),

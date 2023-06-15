@@ -12,7 +12,7 @@ import AppFooter from './app-footer.vue'
 
 <style>
 .container {
-  @apply w-85% md:w-75% lg:w-60% !important mx-auto;
+  @apply w-85% md:w-75% xl:w-60% !important mx-auto;
 }
 
 html,
