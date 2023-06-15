@@ -20,7 +20,7 @@
         v-for="card in 15"
         :id="'card_' + card"
         :key="card"
-        class="max-w-200px flex flex-none snap-center xl:max-w-365px"
+        class="max-w-200px flex flex-none snap-center lg:max-w-347px xl:max-w-365px"
       >
         <cardItem :item="items[0]" />
       </div>
