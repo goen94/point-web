@@ -1,24 +1,47 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 import cardItem from './components/card-item.vue'
 import sliderItem from './components/slider-item.vue'
+import { useMarketplaceItem } from '@/stores/marketplace-item'
+import type { IMarketplaceItem } from '@/stores/marketplace-item'
+import { storeToRefs } from 'pinia'
 
-const yOffset = ref(0)
+const itemStore = useMarketplaceItem()
+const { items } = storeToRefs(itemStore)
+
+const lists = ref<IMarketplaceItem[] | []>([])
+const searchTerm = ref('')
+const searchItems = ref<IMarketplaceItem[] | []>([])
+
 const sortVisible = ref(false)
-
-const vueOnScroll = () => {
-  window.addEventListener('scroll', () => {
-    var curr = window.pageYOffset
-    yOffset.value = curr
-  })
-}
+const searchVisible = ref(false)
 
 const showSort = () => {
   sortVisible.value = !sortVisible.value
 }
 
+const showSearchItems = (value: boolean) => {
+  searchVisible.value = value
+}
+
+function getItems(limit: number) {
+  lists.value = itemStore.getItems(limit)
+}
+
+function loadMore() {
+  lists.value = itemStore.getItems(8)
+}
+
+watch(searchTerm, async (searchTerm) => {
+  if (searchTerm.length) {
+    searchItems.value = itemStore.searchItems(searchTerm)
+  } else {
+    searchItems.value = []
+  }
+})
+
 onMounted(() => {
-  vueOnScroll()
+  getItems(4)
 })
 </script>
 
@@ -52,15 +75,41 @@ onMounted(() => {
           Jelajahi software yang dibuat oleh para developer/pengembang global, dengan jaminan bahwa
           software tersebut telah melalui peninjauan Tim Pointhub.
         </h6>
-        <div class="relative mt-8 w-full">
-          <input
-            type="text"
-            id="search"
-            class="block w-full border border-green-300 rounded-8 bg-white px-5 py-3 text-xl text-gray-900 focus:outline-none"
-            placeholder="Cari Software"
-          />
-          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-            <div class="i-mdi-magnify mr-2 text-xl text-green-300"></div>
+        <div>
+          <div class="relative mt-8 w-full">
+            <input
+              type="text"
+              v-model="searchTerm"
+              id="search"
+              class="block w-full border border-green-300 rounded-8 bg-white px-5 py-3 text-xl text-gray-900 focus:outline-none"
+              placeholder="Cari Software"
+              @focus="showSearchItems(true)"
+              @blur="showSearchItems(false)"
+            />
+            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+              <div class="i-mdi-magnify mr-2 text-xl text-green-300"></div>
+            </div>
+          </div>
+          <div
+            class="z-10 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+            :class="[searchVisible ? 'block' : 'hidden']"
+          >
+            <div class="py-1" v-if="searchItems.length > 0">
+              <a
+                v-for="(item, index) in searchItems"
+                :key="index"
+                class="block px-4 py-2 text-left text-sm text-black hover:cursor-pointer hover:bg-light md:text-lg"
+              >
+                {{ item.name }}
+              </a>
+            </div>
+            <div class="py-1" v-else-if="searchTerm.length > 0">
+              <a
+                class="block px-4 py-2 text-left text-sm text-black hover:cursor-pointer hover:bg-light"
+              >
+                no items found
+              </a>
+            </div>
           </div>
         </div>
         <div class="relative w-full text-center">
@@ -158,16 +207,15 @@ onMounted(() => {
           <div
             class="grid grid-cols-2 mx-2 mt-10 justify-between gap-x-2 gap-y-2 md:ml-6 md:gap-x-6 md:gap-y-8"
           >
-            <cardItem />
-            <cardItem />
-            <cardItem />
-            <cardItem />
+            <cardItem v-for="(item, index) in lists" :key="index" :item="item" />
           </div>
 
           <div class="relative my-10 w-full text-center">
             <div class="relative inline-block text-left">
               <div>
                 <button
+                  v-if="items.length != lists.length"
+                  @click="loadMore"
                   class="inline-flex items-center rounded-8 from-green-700 to-green-500 bg-gradient-to-r px-8 py-3 text-center text-lg font-medium text-white"
                   type="button"
                 >

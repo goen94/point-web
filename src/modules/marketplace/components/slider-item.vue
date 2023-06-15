@@ -22,7 +22,7 @@
         :key="card"
         class="max-w-200px flex flex-none snap-center lg:max-w-365px"
       >
-        <cardItem />
+        <cardItem :item="items[0]" />
       </div>
     </div>
     <div class="hidden flex-none md:block">
@@ -41,10 +41,16 @@
 </template>
 
 <script setup lang="ts">
+import { useMarketplaceItem } from '@/stores/marketplace-item'
 import cardItem from './card-item.vue'
 import { ref, onMounted } from 'vue'
+import { storeToRefs } from 'pinia'
 
 const inner = ref()
+
+const itemStore = useMarketplaceItem()
+
+const { items } = storeToRefs(itemStore)
 
 function calculate() {
   const innerWidth = inner.value

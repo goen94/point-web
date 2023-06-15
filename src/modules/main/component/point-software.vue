@@ -1,17 +1,16 @@
 <script setup lang="ts">
+import { usePointSoftware } from '@/stores/point-software'
+import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
-const softwares = ref([
-  'Key Performance Indicator',
-  'Checkin',
-  'Absensi',
-  'Playbook',
-  'Sales Visitation',
-  'Enterprise Resource Planing'
-])
+
+const pointSoftwareStore = usePointSoftware()
+
+const { softwares, detail } = storeToRefs(pointSoftwareStore)
 const activeSoftware = ref<number>(0)
 
 const selectSoftware = (index: number) => {
   activeSoftware.value = index
+  pointSoftwareStore.setSelected(softwares.value[index])
 }
 </script>
 
@@ -44,33 +43,27 @@ const selectSoftware = (index: number) => {
       </div>
       <div class="col-span-3 space-y-2 md:px-10 md:space-y-5">
         <h1 class="text-center text-lg font-bold text-black md:text-left lg:text-3xl">
-          Key Performance Indicator
+          {{ detail.title }}
         </h1>
         <h1 class="text-center text-sm font-bold text-green-700 md:text-left lg:text-lg">
-          Monitoring Kinerja Karywan dan Target Bisnis Jadi Lebih Mudah!
+          {{ detail.subTitle }}
         </h1>
         <p class="text-center text-xs text-gray-5 md:text-left md:text-sm">
-          Pantau performa karyawan dalam mencapai target secara transparan dan detail. Bukti
-          pekerjaan dan laporan dapat terpantau lebih mudah dengan point KPI. Dilengkapi dengan
-          fitur feedback untuk peningkatan dan perbaikan kinerja
+          {{ detail.detail }}
         </p>
         <div class="flex pt-6 space-x-2 md:pt-0 md:space-x-4">
-          <div class="w-1/3 flex flex-col">
-            <img class="rounded" src="@/assets/images/No_Image_Available.jpg" />
-          </div>
-          <div class="w-1/3 flex flex-col">
-            <img class="rounded" src="@/assets/images/No_Image_Available.jpg" />
-          </div>
-          <div class="w-1/3 flex flex-col">
-            <img class="rounded" src="@/assets/images/No_Image_Available.jpg" />
+          <div class="w-1/3 flex flex-col" v-for="(img, index) in detail.images" :key="index">
+            <img class="rounded" :src="img" />
           </div>
         </div>
-        <div class="flex items-center text-center md:space-x-8">
-          <h1 class="ml-auto mr-2 text-sm font-bold text-green-700 md:ml-0 md:mr-0">
-            Pelajari Lebih Lanjut
-          </h1>
-          <div class="i-mdi-chevron-right mr-auto text-green-700"></div>
-        </div>
+        <router-link :to="detail.link">
+          <div class="mt-4 flex items-center text-center md:space-x-8">
+            <h1 class="ml-auto mr-2 text-sm font-bold text-green-700 md:ml-0 md:mr-0">
+              Pelajari Lebih Lanjut
+            </h1>
+            <div class="i-mdi-chevron-right mr-auto text-green-700"></div>
+          </div>
+        </router-link>
         <div class="flex">
           <router-link :to="'/signup'" class="mx-auto text-center">
             <button

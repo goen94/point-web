@@ -8,7 +8,9 @@
       <h1 class="text-2xl font-bold text-yellow-400 md:text-4xl">Fleksibel & Terintegrasi</h1>
       <img class="mr-auto h-50vh md:h-65vh" src="@/assets/images/Thumbnail-Icon.png" />
     </div>
-    <div class="w-full p-8 text-center md:mr-32 md:w-2/5 space-y-4 md:py-16 md:pl-26 md:text-start">
+    <div
+      class="w-full bg-white p-8 text-center md:mr-32 md:w-2/5 space-y-4 md:py-16 md:pl-26 md:text-start"
+    >
       <h1 class="mt-4 text-lg font-bold text-black">Sign Up to Pointhub</h1>
       <button
         type="button"
@@ -27,15 +29,18 @@
       <h5 class="text-center">or use your email for registration</h5>
       <div class="space-y-2">
         <h2 class="ml-2 text-sm font-bold">Name</h2>
-        <input type="text" class="block w-full border rounded-8 bg-gray-200 px-5 py-2" />
+        <input type="text" class="block w-full border rounded-8 bg-gray-200 px-5 py-2 text-black" />
       </div>
       <div class="space-y-2">
         <h2 class="ml-2 text-sm font-bold">Email</h2>
-        <input type="text" class="block w-full border rounded-8 bg-gray-200 px-5 py-2" />
+        <input type="text" class="block w-full border rounded-8 bg-gray-200 px-5 py-2 text-black" />
       </div>
       <div class="space-y-2">
         <h2 class="ml-2 text-sm font-bold">Password</h2>
-        <input type="password" class="block w-full border rounded-8 bg-gray-200 px-5 py-2" />
+        <input
+          type="password"
+          class="block w-full border rounded-8 bg-gray-200 px-5 py-2 text-black"
+        />
       </div>
       <div class="flex">
         <input class="mx-2 mt-1" type="radio" />
