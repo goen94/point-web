@@ -17,7 +17,7 @@
         class="mx-auto w-full inline-flex items-center border border-green-600 rounded-8 bg-white px-5 py-3 text-center text-sm font-bold"
       >
         <img class="ml-auto h-6" src="@/assets/images/icons8-google-48.png" />
-        <span class="ml-4 mr-auto">Sign Up with Google</span>
+        <span class="ml-4 mr-auto text-black">Sign Up with Google</span>
       </button>
       <button
         type="button"
