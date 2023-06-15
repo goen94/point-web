@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap md:h-screen md:flex-nowrap">
+  <div class="flex flex-wrap bg-white md:h-screen md:flex-nowrap">
     <div
       class="m-w-screen rounded-b-[50%] bg-green-600 p-8 px-30 text-center -mx-30 md:mx-0 md:w-3/5 md:rounded-b-0 md:rounded-br-full md:rounded-tr-full md:px-0 md:px-10 md:pt-10 md:text-start"
     >
@@ -24,19 +24,19 @@
         class="mx-auto w-full inline-flex items-center border border-green-600 rounded-8 bg-white px-5 py-3 text-center text-sm font-bold"
       >
         <img class="ml-auto h-6" src="@/assets/images/github-mark.png" />
-        <span class="ml-4 mr-auto">Sign Up with Github</span>
+        <span class="ml-4 mr-auto text-black">Sign Up with Github</span>
       </button>
-      <h5 class="text-center">or use your email for registration</h5>
+      <h5 class="text-center text-black">or use your email for registration</h5>
       <div class="space-y-2">
-        <h2 class="ml-2 text-sm font-bold">Name</h2>
+        <h2 class="ml-2 text-sm font-bold text-black">Name</h2>
         <input type="text" class="block w-full border rounded-8 bg-gray-200 px-5 py-2 text-black" />
       </div>
       <div class="space-y-2">
-        <h2 class="ml-2 text-sm font-bold">Email</h2>
+        <h2 class="ml-2 text-sm font-bold text-black">Email</h2>
         <input type="text" class="block w-full border rounded-8 bg-gray-200 px-5 py-2 text-black" />
       </div>
       <div class="space-y-2">
-        <h2 class="ml-2 text-sm font-bold">Password</h2>
+        <h2 class="ml-2 text-sm font-bold text-black">Password</h2>
         <input
           type="password"
           class="block w-full border rounded-8 bg-gray-200 px-5 py-2 text-black"
@@ -44,7 +44,7 @@
       </div>
       <div class="flex">
         <input class="mx-2 mt-1" type="radio" />
-        <p class="text-xs">
+        <p class="text-xs text-black">
           Creating an account means you're okay with our
           <span class="text-green-600">Terms of Service, Privacy Policy,</span> and our default
           <span class="text-green-600">Notification Settings</span>
