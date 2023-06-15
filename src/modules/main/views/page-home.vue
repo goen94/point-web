@@ -243,7 +243,7 @@ import PointClient from '../component/point-client.vue'
         <div class="flex-col px-4 md:w-1/2 space-y-4">
           <div class="text-center">
             <!-- <img class="mx-auto h-60px -mb-4" src="@/assets/images/Observable.png" /> -->
-            <h1 class="mx-auto h-60px font-poppins text-5xl text-white text-stroke -mb-5 md:-mb-6">
+            <h1 class="mx-auto h-60px font-poppins text-5xl text-white text-stroke -mb-5">
               OBSERVABLE
             </h1>
             <div class="relative text-center">
@@ -268,7 +268,7 @@ import PointClient from '../component/point-client.vue'
         </div>
         <div class="flex-col px-4 md:w-1/2 space-y-4">
           <div class="text-center">
-            <h1 class="mx-auto h-60px font-poppins text-5xl text-white text-stroke -mb-5 md:-mb-6">
+            <h1 class="mx-auto h-60px font-poppins text-5xl text-white text-stroke -mb-5">
               RELIABLE
             </h1>
             <div class="relative min-h-125px text-center">

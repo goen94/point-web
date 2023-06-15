@@ -51,18 +51,18 @@ const expand = (index: number) => {
           </div>
         </div>
         <div class="w-full text-center md:w-2/6">
-          <div class="ml-auto">
-            <div class="flex">
+          <div class="ml-auto flex-col">
+            <div class="flex items-center">
               <button
                 type="button"
-                class="mx-auto mt-2 rounded-8 from-orange-400 to-yellow-400 bg-gradient-to-r px-20 py-3 text-xl font-bold text-white md:mx-0"
+                class="mx-auto mt-2 rounded-8 from-orange-400 to-yellow-400 bg-gradient-to-r px-20 py-3 text-xl font-bold text-white"
               >
                 COBA GRATIS
               </button>
             </div>
-            <div>
+            <div class="flex">
               <button
-                class="inline-flex items-center rounded-lg bg-transparent px-4 py-2.5 text-center text-lg font-medium text-green-700"
+                class="mx-auto inline-flex items-center rounded-lg bg-transparent px-4 py-2.5 text-center text-lg font-medium text-green-700"
                 type="button"
               >
                 Lihat Harga Software
@@ -78,11 +78,11 @@ const expand = (index: number) => {
   <section class="bg-white">
     <div class="container">
       <div class="flex-col py-8 space-y-6">
-        <div class="border-b border-gray-200 text-center text-lg font-bold text-gray-500">
-          <ul class="flex flex-wrap -mb-px">
+        <div class="flex overflow-hidden border-b border-gray-200 text-start text-lg font-bold text-gray-500">
+          <ul class="no-scrollbar max-w-screen inline-flex items-center overflow-x-scroll scroll-smooth -mb-px">
             <li v-for="(tab, index) in tabs" :key="index" class="mr-8">
               <a
-                class="inline-block border-b-2 rounded-t-lg p-4 hover:cursor-pointer hover:text-green-700"
+                class="inline-block border-b-2 rounded-t-lg p-4 text-center text-xs hover:cursor-pointer md:text-lg hover:text-green-700"
                 :class="[
                   activeTab === index ? 'border-green-700 text-green-700' : 'border-transparent'
                 ]"
@@ -334,7 +334,9 @@ const expand = (index: number) => {
           <div class="flex-grow bg-gray-400 md:h-px"></div>
         </div>
       </div>
-      <sliderItem />
+      <div class="mx-auto lg:w-80%">
+        <sliderItem />
+      </div>
     </div>
   </section>
 
@@ -383,4 +385,16 @@ const expand = (index: number) => {
   background-size: cover;
   background-position: center;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 </style>
