@@ -28,6 +28,7 @@
     "@kyvg/vue3-notification": "^2.9.0",
     "@point-hub/vue-cookie": "^0.2.1",
     "@vueuse/core": "^10.1.2",
+    "bottom-sheet-vue3": "^2.0.5",
     "cleave.js": "^1.6.0",
     "dayjs": "^1.11.7",
     "highlight.js": "^11.7.0",

@@ -5,19 +5,29 @@ import sliderItem from './components/slider-item.vue'
 import { useMarketplaceItem } from '@/stores/marketplace-item'
 import type { IMarketplaceItem } from '@/stores/marketplace-item'
 import { storeToRefs } from 'pinia'
+import { Sheet } from 'bottom-sheet-vue3'
+import { useScreenBreakpointStore } from '@/stores/screen-breakpoint'
 
 const itemStore = useMarketplaceItem()
 const { items } = storeToRefs(itemStore)
+const screenBreakpointStore = useScreenBreakpointStore()
 
 const lists = ref<IMarketplaceItem[] | []>([])
 const searchTerm = ref('')
 const searchItems = ref<IMarketplaceItem[] | []>([])
+const filterVisible = ref(false)
 
 const sortVisible = ref(false)
 const searchVisible = ref(false)
 
 const showSort = () => {
   sortVisible.value = !sortVisible.value
+}
+
+const showFilter = () => {
+  if (screenBreakpointStore.screenBreakpoint == 'sm') {
+    filterVisible.value = true
+  }
 }
 
 const showSearchItems = (value: boolean) => {
@@ -135,34 +145,31 @@ onMounted(() => {
         <div class="w-1/1 md:mr-2 md:w-1/5 md:flex-col md:divide-y">
           <div class="flex items-center py-2 text-green-600">
             <div class="i-fa6-solid-sliders ml-auto mr-2 text-lg md:ml-0"></div>
-            <span class="mr-auto">Filter</span>
+            <span class="mr-auto hover:cursor-pointer" @click="showFilter">Filter</span>
+            <Sheet v-model:visible="filterVisible">
+              <div class="flex-col p-4 py-4">
+                <h1 class="mb-4 text-lg font-bold text-black">Filter</h1>
+                <h1 class="text-xs lg:text-sm">Kategori Software</h1>
+                <div class="mt-4 flex-col space-y-4">
+                  <div v-for="item in 4" :key="item" class="mb-4 flex items-center">
+                    <input
+                      type="radio"
+                      class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
+                    />
+                    <label
+                      for="default-radio-1"
+                      class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
+                      >Kategori 1</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </Sheet>
           </div>
           <div class="hidden flex-col py-4 md:block">
             <h1 class="text-xs lg:text-sm">Kategori Software</h1>
             <div class="mt-4 flex-col space-y-4">
-              <div class="mb-4 flex items-center">
-                <input
-                  type="radio"
-                  class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
-                />
-                <label
-                  for="default-radio-1"
-                  class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
-                  >Kategori 1</label
-                >
-              </div>
-              <div class="mb-4 flex items-center">
-                <input
-                  type="radio"
-                  class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
-                />
-                <label
-                  for="default-radio-1"
-                  class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
-                  >Kategori 1</label
-                >
-              </div>
-              <div class="mb-4 flex items-center">
+              <div v-for="item in 4" :key="item" class="mb-4 flex items-center">
                 <input
                   type="radio"
                   class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"

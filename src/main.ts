@@ -25,6 +25,9 @@ import Cleave from 'cleave.js'
 import { plugin as VueTippy } from 'vue-tippy'
 import 'tippy.js/dist/tippy.css'
 
+import { createBottomSheet } from 'bottom-sheet-vue3'
+import 'bottom-sheet-vue3/style.css'
+
 const app = createApp(MainApp)
 app.directive('cleave', {
   mounted: (el, binding) => {
@@ -32,6 +35,7 @@ app.directive('cleave', {
   }
 })
 app.use(VueTippy)
+app.use(createBottomSheet())
 app.use(router)
 app.use(hljsVuePlugin)
 app.use(Notifications)
