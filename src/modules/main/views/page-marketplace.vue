@@ -51,67 +51,6 @@
             </svg>
           </div>
         </div>
-        <div class="relative w-full text-center">
-          <div class="relative inline-block text-left">
-            <div>
-              <button
-                id="dropdownDefaultButton"
-                data-dropdown-toggle="dropdown"
-                class="inline-flex items-center rounded-lg bg-blue-700 px-4 py-2.5 text-center text-sm font-medium text-white dark:bg-blue-600 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button"
-              >
-                Dropdown button
-                <div class="i-mdi-chevron-down text-green-700"></div>
-              </button>
-            </div>
-            <div
-              class="absolute right-0 z-10 mt-2 hidden w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-              role="menu"
-              aria-orientation="vertical"
-              aria-labelledby="menu-button"
-              tabindex="-1"
-            >
-              <div class="py-1" role="none">
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-0"
-                  >Account settings</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-1"
-                  >Support</a
-                >
-                <a
-                  href="#"
-                  class="text-gray-700 block px-4 py-2 text-sm"
-                  role="menuitem"
-                  tabindex="-1"
-                  id="menu-item-2"
-                  >License</a
-                >
-                <form method="POST" action="#" role="none">
-                  <button
-                    type="submit"
-                    class="text-gray-700 block w-full px-4 py-2 text-left text-sm"
-                    role="menuitem"
-                    tabindex="-1"
-                    id="menu-item-3"
-                  >
-                    Sign out
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -146,7 +85,7 @@
                 />
                 <label
                   for="default-radio-1"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ml-2 text-sm font-medium text-black dark:text-gray-300"
                   >Kategori 1</label
                 >
               </div>
@@ -160,7 +99,7 @@
                 />
                 <label
                   for="default-radio-1"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ml-2 text-sm font-medium text-black dark:text-gray-300"
                   >Kategori 1</label
                 >
               </div>
@@ -174,7 +113,7 @@
                 />
                 <label
                   for="default-radio-1"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  class="ml-2 text-sm font-medium text-black dark:text-gray-300"
                   >Kategori 1</label
                 >
               </div>

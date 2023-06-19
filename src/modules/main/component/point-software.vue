@@ -16,7 +16,7 @@ const selectSoftware = (index: number) => {
 
 <template>
   <div class="flex-1 pt-8 space-y-4 md:pt-16 md:space-y-12">
-    <h1 class="text-center text-3xl font-medium text-orange-400 lg:text-5xl md:font-bold">
+    <h1 class="text-center text-3xl font-bold text-orange-400 lg:text-5xl">
       Coba Gratis <span class="text-black">Software Kami!</span>
     </h1>
     <div
