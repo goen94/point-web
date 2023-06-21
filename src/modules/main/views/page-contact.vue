@@ -27,7 +27,7 @@
           Kirimkan
           <span class="text-orange-5">Pesan</span>
         </h1>
-        <p class="px-2 pb-4 text-sm md:px-8">
+        <p class="px-2 pb-4 text-sm text-black md:px-8">
           Dengan senang hati menjawab setiap pesan dan pertanyaan yang Anda tinggalkan. Harap isi
           form berikut dengan data yang valid untuk mempermudah kami dalam menjangkau Anda.
         </p>
@@ -35,7 +35,6 @@
           <div>
             <input
               type="text"
-              id="search"
               class="block w-full border border-green-500 rounded-lg bg-white px-5 py-2 text-lg text-gray-900 focus:outline-none"
               placeholder="Nama Anda"
             />
@@ -43,7 +42,6 @@
           <div>
             <input
               type="text"
-              id="search"
               class="block w-full border border-green-500 rounded-lg bg-white px-5 py-2 text-lg text-gray-900 focus:outline-none"
               placeholder="No. Handphone"
             />
@@ -51,7 +49,6 @@
           <div>
             <input
               type="text"
-              id="search"
               class="block w-full border border-green-500 rounded-lg bg-white px-5 py-2 text-lg text-gray-900 focus:outline-none"
               placeholder="Alamat Email"
             />
@@ -59,14 +56,12 @@
           <div>
             <input
               type="text"
-              id="search"
               class="block w-full border border-green-500 rounded-lg bg-white px-5 py-2 text-lg text-gray-900 focus:outline-none"
               placeholder="Kota"
             />
           </div>
           <div class="md:col-span-2">
             <textarea
-              id="search"
               rows="8"
               class="block w-full border border-green-500 rounded-lg bg-white px-5 py-2 text-lg text-gray-900 focus:outline-none"
               placeholder="Pesan"
