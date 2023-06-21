@@ -33,9 +33,9 @@ const expand = (index: number) => {
 
   <section class="relative bg-green-50">
     <div class="py-12 container">
-      <div class="grid md:grid-cols-2 gap-y-4">
+      <div class="grid gap-y-4 md:grid-cols-2">
         <div>
-          <h1 class="text-center text-3xl font-bold text-black md:text-justify">
+          <h1 class="text-center text-2xl font-bold text-black md:text-justify xl:text-3xl">
             Apa Yang Ingin
             <span class="text-orange-5">Anda Cari?</span>
           </h1>
@@ -94,10 +94,10 @@ const expand = (index: number) => {
         <div class="flex">
           <div class="relative mt-10 w-full -mb-45 md:-mb-40">
             <div
-              class="flex items-center rounded-8 from-green-700 to-green-400 bg-gradient-to-r p-8"
+              class="flex items-center rounded-8 from-green-700 to-green-500 bg-gradient-to-r p-8"
             >
               <div class="w-1/1 flex-col text-center space-y-1">
-                <h1 class="text-lg font-bold text-yellow-500 md:text-2xl">
+                <h1 class="text-lg font-bold text-yellow-400 md:text-2xl">
                   Anda Masih Memiliki Pertanyaan?
                 </h1>
                 <button
