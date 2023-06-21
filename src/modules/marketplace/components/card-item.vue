@@ -10,7 +10,7 @@ const props = defineProps<{
   <div class="grid overflow-hidden rounded-lg shadow-lg">
     <img
       class="max-h-150px w-full object-cover lg:max-h-250px"
-      src="@/assets/images/No_Image_Available.jpg"
+      src="@/assets/images/no_image_available.jpg"
     />
     <div class="p-3 lg:p-8">
       <h1 class="text-sm font-bold text-black lg:text-lg">{{ props.item.name }}</h1>

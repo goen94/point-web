@@ -68,7 +68,7 @@ onMounted(() => {
             </h1>
           </div>
           <div class="flex-col md:w-1/2">
-            <img class="mt-auto" src="@/assets/images/Thumbnail-Marketplace.png" />
+            <img class="mt-auto" src="@/assets/images/marketplace/thumbnail-marketplace.png" />
           </div>
         </div>
       </div>
@@ -172,10 +172,12 @@ onMounted(() => {
               <div v-for="item in 4" :key="item" class="mb-4 flex items-center">
                 <input
                   type="radio"
+                  :id="'kategori' + item"
+                  name="filterCategory"
                   class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
                 />
                 <label
-                  for="default-radio-1"
+                  :for="'kategori' + item"
                   class="ml-2 text-xs font-medium text-gray-900 lg:text-sm dark:text-gray-300"
                   >Kategori 1</label
                 >
@@ -252,18 +254,6 @@ onMounted(() => {
     <div class="mx-auto lg:w-80%">
       <sliderItem />
     </div>
-    <!-- <div class="container">
-      <div class="flex-col">
-        <div class="mt-16 flex items-center py-4">
-          <div class="flex-grow bg-gray-400 md:h-px"></div>
-          <h1 class="title mx-4 text-center text-3xl font-bold text-black md:text-5xl">
-            Sedang <span class="text-orange-500">Diskon*</span>
-          </h1>
-          <div class="flex-grow bg-gray-400 md:h-px"></div>
-        </div>
-        <sliderItem />
-      </div>
-    </div> -->
   </section>
 
   <section class="bg-light pb-10"></section>
@@ -299,17 +289,3 @@ onMounted(() => {
     </div>
   </section>
 </template>
-
-<style>
-.bg-header {
-  background-image: url('@/assets/images/Banner-About.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
-.bg-footer {
-  background-image: url('@/assets/images/Footer-Web-Point.jpg');
-  background-size: cover;
-  background-position: center;
-}
-</style>

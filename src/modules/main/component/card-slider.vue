@@ -6,7 +6,7 @@
           <div class="ml-1 flex-col overflow-hidden rounded-lg shadow-lg md:mr-4">
             <img
               class="max-h-250px w-full object-cover"
-              src="@/assets/images/No_Image_Available.jpg"
+              src="@/assets/images/no_image_available.jpg"
             />
             <div class="p-4">
               <h1 class="text-lg font-bold">Nama Aplikasi</h1>
@@ -41,7 +41,7 @@
           <div class="ml-1 flex-col overflow-hidden rounded-lg shadow-lg md:mr-4">
             <img
               class="max-h-250px w-full object-cover"
-              src="@/assets/images/No_Image_Available.jpg"
+              src="@/assets/images/no_image_available.jpg"
             />
             <div class="p-4">
               <h1 class="text-lg font-bold">Nama Aplikasi</h1>
@@ -76,7 +76,7 @@
           <div class="ml-1 flex-col overflow-hidden rounded-lg shadow-lg md:mr-4">
             <img
               class="max-h-250px w-full object-cover"
-              src="@/assets/images/No_Image_Available.jpg"
+              src="@/assets/images/no_image_available.jpg"
             />
             <div class="p-4">
               <h1 class="text-lg font-bold">Nama Aplikasi</h1>

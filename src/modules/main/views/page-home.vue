@@ -48,30 +48,30 @@ import PointClient from '../component/point-client.vue'
           Standar produk dan jasa yang kami terapkan dan jadi pembeda Pointhub dengan layanan
           lainnya
         </h1>
-        <img class="hidden md:block" src="@/assets/images/6-Icon-Standart-Point-Desktop.png" />
+        <img class="hidden md:block" src="@/assets/images/home/6-icon-standart-point-desktop.png" />
         <div class="grid grid-cols-3 md:hidden">
           <div class="mb-2 space-y-2">
-            <img class="max-w-25" src="@/assets/images/Icon-Usable.png" />
+            <img class="max-w-25" src="@/assets/images/home/icon-usable.png" />
             <h1 class="text-center text-sm font-bold text-black">Usable</h1>
           </div>
           <div class="mb-2 space-y-2">
-            <img class="max-w-25" src="@/assets/images/Icon-Mantainable.png" />
+            <img class="max-w-25" src="@/assets/images/home/icon-mantainable.png" />
             <h1 class="text-center text-sm font-bold text-black">Maintainable</h1>
           </div>
           <div class="mb-2 space-y-2">
-            <img class="max-w-25" src="@/assets/images/Icon-Scalable.png" />
+            <img class="max-w-25" src="@/assets/images/home/icon-scalable.png" />
             <h1 class="text-center text-sm font-bold text-black">Scalable</h1>
           </div>
           <div class="mb-2 space-y-2">
-            <img class="max-w-25" src="@/assets/images/Icon-Observable.png" />
+            <img class="max-w-25" src="@/assets/images/home/icon-observable.png" />
             <h1 class="text-center text-sm font-bold text-black">Observable</h1>
           </div>
           <div class="mb-2 space-y-2">
-            <img class="max-w-25" src="@/assets/images/Icon-Secure.png" />
+            <img class="max-w-25" src="@/assets/images/home/icon-secure.png" />
             <h1 class="text-center text-sm font-bold text-black">Secure</h1>
           </div>
           <div class="mb-2 space-y-2">
-            <img class="max-w-25" src="@/assets/images/Icon-Reliable.png" />
+            <img class="max-w-25" src="@/assets/images/home/icon-reliable.png" />
             <h1 class="text-center text-sm font-bold text-black">Reliable</h1>
           </div>
         </div>
@@ -103,7 +103,10 @@ import PointClient from '../component/point-client.vue'
             </div>
           </div>
           <div class="relative md:w-1/2">
-            <img class="mx-auto -mt-10 md:h-340px" src="@/assets/images/Thumbnail-Usable.png" />
+            <img
+              class="mx-auto -mt-10 md:h-340px"
+              src="@/assets/images/home/thumbnail-usable.png"
+            />
           </div>
         </div>
       </div>
@@ -119,7 +122,7 @@ import PointClient from '../component/point-client.vue'
         <div class="relative md:w-1/2">
           <img
             class="mx-auto md:h-350px md:-mt-10"
-            src="@/assets/images/Thumbnail-Mantainable.png"
+            src="@/assets/images/home/thumbnail-mantainable.png"
           />
         </div>
         <div class="flex-col px-4 md:w-1/2 space-y-6">
@@ -188,7 +191,7 @@ import PointClient from '../component/point-client.vue'
         <div class="relative md:w-1/2">
           <img
             class="mx-auto -mb-10 md:mb-0 md:h-450px md:-mt-10 md:-mt-20"
-            src="@/assets/images/Thumbnail-Scalable.png"
+            src="@/assets/images/home/thumbnail-scalable.png"
           />
         </div>
       </div>
@@ -202,7 +205,10 @@ import PointClient from '../component/point-client.vue'
     <div class="container">
       <div class="flex flex-wrap md:flex-nowrap space-x-4 md:pt-16">
         <div class="relative flex md:w-1/2">
-          <img class="mr-auto md:h-380px md:-mt-10" src="@/assets/images/Thumbnail-Secure.png" />
+          <img
+            class="mr-auto md:h-380px md:-mt-10"
+            src="@/assets/images/home/thumbnail-secure.png"
+          />
         </div>
         <div class="flex-col px-4 md:w-1/2 space-y-6">
           <div class="relative items-center">
@@ -242,7 +248,6 @@ import PointClient from '../component/point-client.vue'
       <div class="flex flex-wrap pt-16 md:flex-nowrap space-x-4 space-y-4 md:pt-16 md:space-y-0">
         <div class="flex-col px-4 md:w-1/2 space-y-4">
           <div class="text-center">
-            <!-- <img class="mx-auto h-60px -mb-4" src="@/assets/images/Observable.png" /> -->
             <h1 class="mx-auto h-60px font-poppins text-5xl text-white text-stroke -mb-5">
               OBSERVABLE
             </h1>
@@ -314,11 +319,14 @@ import PointClient from '../component/point-client.vue'
       <div class="flex flex-wrap pt-16 md:flex-nowrap space-y-6 md:pt-16 md:space-x-4 md:space-y-0">
         <div class="relative w-full flex md:w-1/2 md:space-x-4">
           <div class="hidden flex-none md:block">
-            <img class="h-10 w-10" src="@/assets/images/Developer.png" />
+            <img class="h-10 w-10" src="@/assets/images/home/developer.png" />
           </div>
           <div class="grow flex-col text-center space-y-4 md:text-left">
             <div class="flex items-center">
-              <img class="ml-auto mr-4 h-10 w-10 md:hidden" src="@/assets/images/Developer.png" />
+              <img
+                class="ml-auto mr-4 h-10 w-10 md:hidden"
+                src="@/assets/images/home/developer.png"
+              />
               <h1 class="mr-auto text-3xl font-bold text-black">Developer</h1>
             </div>
             <p class="text-sm text-black">
@@ -332,11 +340,14 @@ import PointClient from '../component/point-client.vue'
         </div>
         <div class="relative w-full flex md:w-1/2 md:space-x-4">
           <div class="hidden flex-none md:block">
-            <img class="h-10 w-10" src="@/assets/images/Investor.png" />
+            <img class="h-10 w-10" src="@/assets/images/home/investor.png" />
           </div>
           <div class="grow flex-col text-center space-y-4 md:text-left">
             <div class="flex text-center">
-              <img class="ml-auto mr-4 h-10 w-10 md:hidden" src="@/assets/images/Investor.png" />
+              <img
+                class="ml-auto mr-4 h-10 w-10 md:hidden"
+                src="@/assets/images/home/investor.png"
+              />
               <h1 class="mr-auto text-3xl font-bold text-black">Investor</h1>
             </div>
             <p class="text-sm text-black">
@@ -355,7 +366,7 @@ import PointClient from '../component/point-client.vue'
   </section>
 
   <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-white pb-25 md:rounded-b-[30%]">
+    <div class="rounded-b-[15%] bg-white pb-25 md:rounded-b-[25%]">
       <div class="container">
         <BoxFaq />
       </div>
@@ -365,7 +376,7 @@ import PointClient from '../component/point-client.vue'
 
 <style>
 .clip-container {
-  background-image: url('@/assets/images/Banner-Home-Point.jpg');
+  background-image: url('@/assets/images/home/banner-home-point.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

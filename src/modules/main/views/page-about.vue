@@ -18,7 +18,7 @@ import BoxFaq from '../component/box-faq.vue'
             </h1>
           </div>
           <div class="z-2 flex-col -mb-10 md:w-1/2">
-            <img src="@/assets/images/Thumbnail-About.png" />
+            <img src="@/assets/images/about/thumbnail-about.png" />
           </div>
         </div>
       </div>
@@ -96,28 +96,28 @@ import BoxFaq from '../component/box-faq.vue'
           <div class="mx-auto flex flex-wrap md:flex-nowrap">
             <div class="w-full inline-flex items-center">
               <div class="w-1/3 md:w-1/4">
-                <img src="@/assets/images/gcp.png" />
+                <img src="@/assets/images/about/gcp.png" />
               </div>
               <div class="w-1/3 md:w-1/4">
-                <img src="@/assets/images/aws.png" />
+                <img src="@/assets/images/about/aws.png" />
               </div>
               <div class="w-1/3 md:w-1/4">
-                <img src="@/assets/images/firebase.png" />
+                <img src="@/assets/images/about/firebase.png" />
               </div>
               <div class="hidden w-1/4 md:block">
                 <div class="flex items-center">
                   <div class="w-2/3">
-                    <img class="max-h-30" src="@/assets/images/laravel.png" />
+                    <img class="max-h-30" src="@/assets/images/about/laravel.png" />
                   </div>
                   <div class="w-1/3">
-                    <img class="max-h-10" src="@/assets/images/vue.png" />
+                    <img class="max-h-10" src="@/assets/images/about/vue.png" />
                   </div>
                 </div>
               </div>
             </div>
             <div class="w-full inline-flex items-center md:hidden">
-              <img class="ml-auto max-h-20 md:max-h-30" src="@/assets/images/laravel.png" />
-              <img class="mr-auto max-h-10" src="@/assets/images/vue.png" />
+              <img class="ml-auto max-h-20 md:max-h-30" src="@/assets/images/about/laravel.png" />
+              <img class="mr-auto max-h-10" src="@/assets/images/about/vue.png" />
             </div>
           </div>
         </div>
@@ -133,11 +133,3 @@ import BoxFaq from '../component/box-faq.vue'
     </div>
   </section>
 </template>
-
-<style>
-.bg-header {
-  background-image: url('@/assets/images/Banner-About.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-</style>

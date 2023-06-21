@@ -4,9 +4,14 @@ import sliderItem from './components/slider-item.vue'
 
 const tabs = ref(['Detail Software', 'Screenshots', 'Rating & Reviews', 'Pusat Bantuan'])
 const activeTab = ref(0)
+const sortVisible = ref(false)
 
 const selectedTab = (index: number) => {
   activeTab.value = index
+}
+
+const showSort = () => {
+  sortVisible.value = !sortVisible.value
 }
 
 const expIndex = ref(-1)
@@ -78,8 +83,12 @@ const expand = (index: number) => {
   <section class="bg-white">
     <div class="container">
       <div class="flex-col py-8 space-y-6">
-        <div class="flex overflow-hidden border-b border-gray-200 text-start text-lg font-bold text-gray-500">
-          <ul class="no-scrollbar max-w-screen inline-flex items-center overflow-x-scroll scroll-smooth -mb-px">
+        <div
+          class="flex overflow-hidden border-b border-gray-200 text-start text-lg font-bold text-gray-500"
+        >
+          <ul
+            class="no-scrollbar max-w-screen inline-flex items-center overflow-x-scroll scroll-smooth -mb-px"
+          >
             <li v-for="(tab, index) in tabs" :key="index" class="mr-8">
               <a
                 class="inline-block border-b-2 rounded-t-lg p-4 text-center text-xs hover:cursor-pointer md:text-lg hover:text-green-700"
@@ -97,7 +106,7 @@ const expand = (index: number) => {
           <div v-if="activeTab == 0" class="w-full flex-col md:w-2/3 space-y-4">
             <img
               class="max-h-[500px] w-full rounded-lg object-cover"
-              src="@/assets/images/No_Image_Available.jpg"
+              src="@/assets/images/no_image_available.jpg"
             />
             <p class="text-gray-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -121,7 +130,7 @@ const expand = (index: number) => {
               </p>
               <img
                 class="max-h-[500px] w-full rounded-lg object-cover"
-                src="@/assets/images/No_Image_Available.jpg"
+                src="@/assets/images/no_image_available.jpg"
               />
             </div>
             <div class="h-px flex-grow bg-gray-400"></div>
@@ -134,7 +143,7 @@ const expand = (index: number) => {
               </p>
               <img
                 class="max-h-[500px] w-full rounded-lg object-cover"
-                src="@/assets/images/No_Image_Available.jpg"
+                src="@/assets/images/no_image_available.jpg"
               />
             </div>
             <div class="relative my-10 w-full text-center">
@@ -166,14 +175,27 @@ const expand = (index: number) => {
               </div>
               <div>
                 <button
-                  id="dropdownDefaultButton"
-                  data-dropdown-toggle="dropdown"
                   class="bg-white-700 inline-flex items-center border border-gray-400 rounded-8 px-4 py-2.5 text-center text-sm font-medium text-gray"
                   type="button"
+                  @click="showSort()"
                 >
                   Urut Berdasarkan
                   <div class="i-mdi-chevron-down ml-8 text-black"></div>
                 </button>
+                <div
+                  class="absolute z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+                  :class="[sortVisible ? 'block' : 'hidden']"
+                >
+                  <div class="py-1">
+                    <a
+                      v-for="sort in 3"
+                      :key="sort"
+                      class="block px-4 py-2 text-sm text-gray-700 hover:cursor-pointer hover:bg-light"
+                    >
+                      Sort {{ sort }}
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -371,30 +393,3 @@ const expand = (index: number) => {
     </div>
   </section>
 </template>
-
-<style>
-.bg-header {
-  min-height: 400px;
-  background-image: url('@/assets/images/Banner-About.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
-.bg-footer {
-  background-image: url('@/assets/images/Footer-Web-Point.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-</style>

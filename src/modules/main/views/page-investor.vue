@@ -27,7 +27,7 @@
               Saat ini Pointhub Sedang Beroperasi Dalam
               <span class="text-orange-5">Stealth Mode.</span>
             </h1>
-            <img class="ml-auto md:hidden" src="@/assets/images/Thumbnail-Developer.png" />
+            <img class="ml-auto md:hidden" src="@/assets/images/investor/thumbnail-developer.png" />
             <p class="text-center text-sm text-gray-5 md:text-start md:text-lg">
               Mengacu pada keputusan perusahaan untuk tidak mempublikasikan secara masif mengenai
               bisnis dan rencana kami kepada publik. Hal ini memungkinkan kami menghindari
@@ -40,7 +40,7 @@
           <div>
             <img
               class="ml-auto hidden h-380px md:block"
-              src="@/assets/images/Thumbnail-Developer.png"
+              src="@/assets/images/investor/thumbnail-developer.png"
             />
           </div>
         </div>
@@ -83,11 +83,3 @@
     </div>
   </section>
 </template>
-
-<style>
-.bg-header {
-  background-image: url('@/assets/images/Banner-About.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-</style>

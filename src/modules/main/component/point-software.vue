@@ -53,7 +53,7 @@ const selectSoftware = (index: number) => {
         </p>
         <div class="flex pt-6 space-x-2 md:pt-0 md:space-x-4">
           <div class="w-1/3 flex flex-col" v-for="(img, index) in detail.images" :key="index">
-            <img class="rounded" src="@/assets/images/No_Image_Available.jpg" />
+            <img class="rounded" src="@/assets/images/no_image_available.jpg" />
           </div>
         </div>
         <router-link :to="detail.link">

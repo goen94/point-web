@@ -24,7 +24,7 @@ const expand = (index: number) => {
             </h1>
           </div>
           <div class="flex-col md:w-1/2">
-            <img class="mt-auto" src="@/assets/images/Thumbnail-Bantuan.png" />
+            <img class="mt-auto" src="@/assets/images/help/thumbnail-bantuan.png" />
           </div>
         </div>
       </div>
@@ -115,11 +115,3 @@ const expand = (index: number) => {
     </div>
   </section>
 </template>
-
-<style>
-.bg-header {
-  background-image: url('@/assets/images/Banner-About.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-</style>

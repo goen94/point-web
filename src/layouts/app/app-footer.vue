@@ -78,7 +78,7 @@
 
 <style>
 .bg-footer {
-  background-image: url('@/assets/images/Footer-Web-Point.jpg');
+  background-image: url('@/assets/images/footer-web-point.jpg');
   background-size: cover;
   background-position: center;
 }

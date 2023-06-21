@@ -25,11 +25,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- Header Wrapper-->
-  <!-- <nav
-    class="sticky top-0 z-20"
-    :class="[yOffset > 50 || path === '/detail' ? 'bg-green-700 shadow' : 'bg-transparent']"
-  > -->
   <header
     class="top-0 z-50 w-full bg-green-700"
     :class="[
@@ -38,7 +33,6 @@ onMounted(() => {
     ]"
   >
     <div class="mx-auto flex py-6">
-      <!-- Left Navigation -->
       <div class="ml-auto mr-10 hidden justify-center md:flex md:flex-inline">
         <router-link
           class="nav-text text-xs lg:text-base hover:text-yellow-400"
@@ -56,14 +50,12 @@ onMounted(() => {
           Marketplace
         </router-link>
       </div>
-      <!-- Logo -->
       <div class="w-full flex md:w-auto">
         <img
           class="mx-auto max-h-8 lg:max-h-8 md:max-h-4 hover:cursor-pointer"
           src="@/assets/images/logo.png"
         />
       </div>
-      <!-- Right Navigation -->
       <div class="ml-10 mr-auto hidden justify-center md:flex md:flex-inline">
         <router-link
           class="nav-text text-xs lg:text-base hover:text-yellow-400"

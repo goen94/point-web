@@ -24,8 +24,24 @@ body {
   -webkit-text-stroke: 1px black;
 }
 
-@font-face {
-  font-family: 'Poppins-ExtraBold';
-  src: local('Poppins-ExtraBold'), url(@/assets/font/Poppins-ExtraBold.ttf) format('truetype');
+.bg-header {
+  background-image: url('@/assets/images/banner-about.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.inner {
+  transition: transform 0.2s;
 }
 </style>

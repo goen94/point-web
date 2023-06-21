@@ -13,7 +13,7 @@
             </h1>
           </div>
           <div class="flex-col md:w-1/2">
-            <img class="mt-auto" src="@/assets/images/Thumbnail-Kontak.png" />
+            <img class="mt-auto" src="@/assets/images/contact/thumbnail-kontak.png" />
           </div>
         </div>
       </div>
@@ -143,11 +143,3 @@
     </div>
   </section>
 </template>
-
-<style>
-.bg-header {
-  background-image: url('@/assets/images/Banner-About.jpg');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-</style>
