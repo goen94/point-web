@@ -262,8 +262,13 @@ const expand = (index: number) => {
               <div class="flex flex-col">
                 <div class="mb-2">
                   <div v-for="radio in 3" :key="radio" class="mb-4 flex items-center">
-                    <input type="radio" class="h-4 w-4 accent-green-600" />
-                    <label for="default-radio-1" class="ml-2 text-sm font-bold text-black">
+                    <input
+                      name="price"
+                      :id="'price' + radio"
+                      type="radio"
+                      class="h-4 w-4 accent-green-600"
+                    />
+                    <label :for="'price' + radio" class="ml-2 text-sm font-bold text-black">
                       Harga Software
                     </label>
                     <p class="ml-auto font-bold text-green-600">Rp. 000.000</p>
