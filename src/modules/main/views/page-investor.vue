@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div class="bg-header md:bg-[100%] relative h-full min-h-300px bg-cover md:min-h-400px">
       <div class="relative container">
         <div class="relative flex pt-100px">
@@ -11,9 +11,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="relative bg-white">
+  <section class="relative bg-white">
     <div class="container">
       <div class="flex-col py-10 text-center space-x-4 space-y-6">
         <iframe
@@ -46,9 +46,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="bg-black pb-20 md:pb-14 border-none">
+  <section class="bg-black pb-20 md:pb-14">
     <div class="relative rounded-b-[15%] bg-white px-4 pb-25 md:rounded-b-[30%]">
       <div class="container">
         <div class="flex">
@@ -81,5 +81,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
