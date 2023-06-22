@@ -89,12 +89,15 @@ const expand = (index: number) => {
           <ul
             class="no-scrollbar max-w-screen inline-flex items-center overflow-x-scroll scroll-smooth -mb-px"
           >
-            <li v-for="(tab, index) in tabs" :key="index" class="mr-8">
+            <li
+              v-for="(tab, index) in tabs"
+              :key="index"
+              class="mr-8 h-full flex border-b-2"
+              :class="[activeTab === index ? 'border-green-700' : 'border-transparent']"
+            >
               <a
-                class="inline-block border-b-2 rounded-t-lg p-4 text-center text-xs hover:cursor-pointer md:text-lg hover:text-green-700"
-                :class="[
-                  activeTab === index ? 'border-green-700 text-green-700' : 'border-transparent'
-                ]"
+                class="my-auto inline-block rounded-t-lg p-4 text-center text-xs hover:cursor-pointer md:text-lg hover:text-green-700"
+                :class="[activeTab === index ? 'text-green-700' : 'text-gray-500']"
                 @click="selectedTab(index)"
               >
                 {{ tab }}

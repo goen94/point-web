@@ -160,7 +160,7 @@ onMounted(() => {
                     />
                     <label
                       :for="'kategori' + item"
-                      class="ml-2 text-xs font-medium text-black lg:text-sm dark:text-gray-300"
+                      class="ml-2 text-xs font-medium text-black lg:text-sm"
                       >Kategori 1</label
                     >
                   </div>
@@ -180,7 +180,7 @@ onMounted(() => {
                 />
                 <label
                   :for="'kategori' + item"
-                  class="ml-2 text-xs font-medium text-black lg:text-sm dark:text-gray-300"
+                  class="ml-2 text-xs font-medium text-black lg:text-sm"
                   >Kategori 1</label
                 >
               </div>
