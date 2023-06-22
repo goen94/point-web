@@ -154,10 +154,12 @@ onMounted(() => {
                   <div v-for="item in 4" :key="item" class="mb-4 flex items-center">
                     <input
                       type="radio"
+                      :id="'kategori' + item"
+                      name="filterCategory"
                       class="h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 focus:ring-green-500"
                     />
                     <label
-                      for="default-radio-1"
+                      :for="'kategori' + item"
                       class="ml-2 text-xs font-medium text-black lg:text-sm dark:text-gray-300"
                       >Kategori 1</label
                     >

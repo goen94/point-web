@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BoxFaq from '../component/box-faq.vue'
+</script>
 
 <template>
   <section>
@@ -99,41 +101,9 @@
   </section>
 
   <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-green-50 px-4 pb-25 -m-4 md:rounded-b-[30%]">
+    <div class="rounded-b-[15%] bg-green-50 pb-25 md:rounded-b-[25%]">
       <div class="container">
-        <div class="flex">
-          <div class="relative mt-10 w-full -mb-45 md:-mb-40">
-            <div
-              class="flex flex-wrap items-center rounded-8 from-green-700 to-green-400 bg-gradient-to-r p-8 md:flex-nowrap"
-            >
-              <div class="md:w-1/2">
-                <h1 class="text-center text-lg font-bold text-white md:text-left md:text-2xl">
-                  Ingin Bertanya Lebih Lanjut Tentang Software Point?
-                </h1>
-              </div>
-              <div class="mt-2 flex md:w-1/2 space-x-2 md:px-4">
-                <div class="w-1/2">
-                  <button
-                    type="button"
-                    class="inline-flex items-center rounded-8 bg-white px-5 py-2 text-xs font-bold text-green-700 md:text-lg"
-                  >
-                    <div class="i-ph-question-bold mr-2"></div>
-                    Pusat Bantuan
-                  </button>
-                </div>
-                <div class="w-1/2">
-                  <button
-                    type="button"
-                    class="right-0 inline-flex items-center rounded-8 bg-white px-5 py-2 text-xs font-bold text-green-700 md:text-lg"
-                  >
-                    <div class="i-ic-baseline-whatsapp mr-2"></div>
-                    No Whatsapp
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <BoxFaq />
       </div>
     </div>
   </section>
