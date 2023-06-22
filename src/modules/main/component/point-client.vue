@@ -9,14 +9,15 @@
           <ul
             class="no-scrollbar max-w-screen inline-flex items-center overflow-x-scroll scroll-smooth text-center text-sm font-bold -mb-px space-x-15 md:space-x-25"
           >
-            <li class="flex-1" v-for="(tab, index) in tabs" :key="index">
+            <li
+              class="h-full flex-1 border-b-2"
+              :class="[activeTab === index ? 'border-green-700' : 'border-transparent']"
+              v-for="(tab, index) in tabs"
+              :key="index"
+            >
               <a
-                class="relative flex items-center justify-center gap-2 border-b-2 px-1 py-3 hover:cursor-pointer hover:text-green-700"
-                :class="[
-                  activeTab === index
-                    ? 'border-green-700 text-green-700'
-                    : 'text-gray-5 border-transparent'
-                ]"
+                class="relative flex items-center justify-center gap-2 px-1 py-3 hover:cursor-pointer hover:text-green-700"
+                :class="[activeTab === index ? 'text-green-700' : 'text-gray-5']"
                 @click="selectedTab(index)"
               >
                 {{ tab }}
