@@ -7,7 +7,7 @@
       <h1 class="mt-4 text-2xl font-bold text-white xl:text-4xl">Solusi Sistem Software</h1>
       <h1 class="text-2xl font-bold text-yellow-400 xl:text-4xl">Fleksibel & Terintegrasi</h1>
       <img
-        class="lg:h-v65 mr-auto h-50vh md:h-55vh"
+        class="lg:h-65vh mr-auto h-50vh md:h-55vh"
         src="@/assets/images/signup/thumbnail-icon.png"
       />
     </div>
