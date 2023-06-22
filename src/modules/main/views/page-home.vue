@@ -314,7 +314,7 @@ import PointClient from '../component/point-client.vue'
     <PointClient />
   </section>
 
-  <section class="bg-white pb-10 m0">
+  <section class="bg-white pb-10">
     <div class="container">
       <div class="flex flex-wrap pt-16 md:flex-nowrap space-y-6 md:pt-16 md:space-x-4 md:space-y-0">
         <div class="relative w-full flex md:w-1/2 md:space-x-4">
@@ -365,7 +365,7 @@ import PointClient from '../component/point-client.vue'
     </div>
   </section>
 
-  <section class="bg-black pb-20 md:pb-14 m0">
+  <section class="bg-black pb-20 md:pb-14">
     <div class="rounded-b-[15%] bg-white pb-25 md:rounded-b-[25%]">
       <div class="container">
         <BoxFaq />
