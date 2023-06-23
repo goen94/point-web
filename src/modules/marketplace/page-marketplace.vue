@@ -62,7 +62,7 @@ onMounted(() => {
         <div class="flex flex-wrap pt-50px md:flex-nowrap space-x-4 space-y-4 md:pt-100px">
           <div class="relative flex md:w-1/2">
             <h1
-              class="mx-auto pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left 2xl:text-5xl lg:text-4xl"
+              class="mx-auto px-4 pt-16 text-center text-2xl font-bold text-white md:px-10% md:text-left lg:text-4xl"
             >
               Jelajahi Software Sesuai Dengan Kebutuhan Anda
             </h1>
