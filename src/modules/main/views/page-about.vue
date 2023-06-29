@@ -32,7 +32,7 @@ import BoxFaq from '../component/box-faq.vue'
           <h1 class="text-center text-2xl font-bold text-orange-500 md:text-4xl">
             Tentang <span class="text-black">Pointhub</span>
           </h1>
-          <h6 class="mt-4 text-center md:text-left">
+          <h6 class="mt-4 text-center text-black md:text-left">
             Point adalah Startup Milenial, tetapi bisnis modelnya konvensional. Point membangun
             software dengan sistem Open Source. Inovasi dari para pebisnis/startup dimulai dari
             kebutuhan bisnis di sector riil yang ada saat ini yang kemudian didgigitalisasi
@@ -40,7 +40,7 @@ import BoxFaq from '../component/box-faq.vue'
           </h6>
         </div>
         <div class="w-full flex-col md:w-1/2">
-          <h6 class="mt-8 text-center md:mt-14 md:text-left">
+          <h6 class="mt-8 text-center text-black md:mt-14 md:text-left">
             Point menawarkan platform yang menggabungkan kebutuhan pengembang, pemilik bisnis,
             infastruktur, dan pasar menjadi satu ekosistem. Dengan Point, Pelanggan tidak perlu
             berdiri sendiri dalam membuat software tertentu, kami akan tangani semua dari mulai
@@ -126,7 +126,7 @@ import BoxFaq from '../component/box-faq.vue'
   </section>
 
   <section class="bg-black pb-20 md:pb-14">
-    <div class="relative rounded-b-[15%] bg-green-50 px-4 pb-25 -m-4 md:rounded-b-[30%]">
+    <div class="rounded-b-[15%] bg-green-50 pb-25 md:rounded-b-[25%]">
       <div class="container">
         <BoxFaq />
       </div>

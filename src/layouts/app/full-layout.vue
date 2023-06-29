@@ -18,6 +18,7 @@ import AppFooter from './app-footer.vue'
 html,
 body {
   max-width: 100%;
+  background-color: white;
 }
 
 .text-stroke {

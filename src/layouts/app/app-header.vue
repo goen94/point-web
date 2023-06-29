@@ -122,6 +122,13 @@ onMounted(() => {
           Investor
         </router-link>
         <router-link
+          class="nav-text block hover:text-yellow-400"
+          :class="{ 'text-yellow-400': path === '/about' }"
+          :to="'/about'"
+        >
+          Profil
+        </router-link>
+        <router-link
           @click="toggleMobile(!showMobile)"
           class="nav-text block hover:text-yellow-400"
           :class="{ 'text-yellow-400': path === '/help' }"
