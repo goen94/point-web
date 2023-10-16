@@ -92,13 +92,13 @@ import PointClient from '../component/point-client.vue'
             <div class="space-y-4">
               <div class="flex items-center">
                 <h1 class="text-sm font-bold text-green-700 md:text-xl">
-                  Software Point Mudah Digunakan
+                  User interface yang intuitif, mudah digunakan, navigasi jelas,
+	dan desain responsif.
                 </h1>
                 <img class="ml-2 h-4 w-4 md:h-8 md:w-8" src="@/assets/images/check.png" />
               </div>
               <h1 class="text-justify text-xs text-black md:text-sm">
-                Software dirancang dengan mempertingankan kemudahan Anda serta fitur-fitur
-                didalamnya menyesuaikan dengan kebutuhan Bisnis Anda
+                Memungkinkan penggunaan tanpa pelatihan khusus.
               </h1>
             </div>
           </div>

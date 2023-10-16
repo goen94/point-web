@@ -24,17 +24,23 @@
         <div class="grid py-8 md:grid-cols-2">
           <div class="space-y-6">
             <h1 class="text-center text-sm font-bold text-green-700 md:text-justify md:text-2xl">
-              Saat ini Pointhub Sedang Beroperasi Dalam
-              <span class="text-orange-5">Stealth Mode.</span>
+              Selamat datang di  
+              <span class="text-orange-5">Stealth Mode</span>
+              kami!
             </h1>
             <img class="ml-auto md:hidden" src="@/assets/images/investor/thumbnail-developer.png" />
-            <p class="text-center text-sm text-gray-5 md:text-start md:text-lg">
-              Mengacu pada keputusan perusahaan untuk tidak mempublikasikan secara masif mengenai
-              bisnis dan rencana kami kepada publik. Hal ini memungkinkan kami menghindari
-              publisistas dini dan mempertahankan kendali atas kekayaan intelektual yang kami
-              miliki. Ini menjadi sangat penting bagi kami yang sedang mengembangkan teknologi baru
-              atau memasuki pasar yang sangat kompetitif. Stealth Mode adalah keputusan strategis
-              yang bergantung pada tujuan, sumber daya, dan lanskap perusahaan Kami.
+            <p class="flex flex-col text-center text-sm text-gray-5 md:text-start md:text-lg">
+              <span>
+                Saat ini, kami terus merancang dan mengembangkan ekosistem revolusioner yang akan mengubah cara Anda melakukan transformasi digital.
+              </span>
+              <br/>
+              <span>
+                Kami berfokus untuk melakukan penyempurnaan produk dan menguji ekosistem teknologi yang tengah dibangun. Semua kami lakukan dengan seksama, agar ekosistem ini dapat memberikan pengalaman termudah dan terkini untuk Anda.
+              </span>
+              <br/>
+              <span>
+                Klik tombol subscribe sekarang dan bersiaplah melakukan digitalisasi dengan mudah!
+              </span>
             </p>
           </div>
           <div>
