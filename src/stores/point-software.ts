@@ -1,12 +1,42 @@
 import { defineStore } from 'pinia'
 
 const softwares = [
-  'Key Performance Indicator',
-  'Checkin',
-  'Absensi',
-  'Playbook',
-  'Sales Visitation',
-  'Enterprise Resource Planing'
+  {
+    title: 'Key Performance Indicator',
+    subTitle: 'Pastikan biaya gaji anda dibayarkan untuk orang yang tepat!',
+    detail:
+      'Hargai individu sesuai dengan prestasinya dengan Software KPI kami. Laporan kinerja karyawan dapat dibuat dengan cepat dan tepat. Lacak kemajuan dan kualitas tim anda dengan akurat.',
+  },
+  {
+    title: 'Checkin',
+    subTitle: '',
+    detail:
+      '',
+  },
+  {
+    title: 'Absensi',
+    subTitle: 'Absensi praktis tanpa ribet memasang alat!',
+    detail:
+      'Software Absensi terkini bagi pekerja kantor maupun pekerja remote. Teknologi geolokasi Point memastikan identifikasi karyawan secara akurat, dan meminimalkan praktik absensi palsu.',
+  },
+  {
+    title: 'Playbook',
+    subTitle: 'Prosedur kerja yang terstruktur terbukti meminimalisir konflik kerja!',
+    detail:
+      'Software Playbook kami mengorganisir alur kerja dan prosedur perusahaan ke dalam pola yang mudah diakses, memudahkan tim Anda untuk membuat keputusan dengan efektif.',
+  },
+  {
+    title: 'Sales Visitation',
+    subTitle: 'Temukan potensi penjualan tanpa batas dengan software sales visitation kami.',
+    detail:
+      'Dengan software geolokasi canggih, identifikasi prospek terbaik dengan akurasi tinggi. Tampilkan data pelanggan potensial berdasarkan lokasi, sehingga Anda dapat menyusun strategi penjualan yang tepat sasaran. Dengan data kami, analisa dapat dilakukan untuk memahami tren pasar dan menemukan peluang bisnis baru. Kluster prospek potensial dan pelanggan terbaik dapat terpetakan, sehingga mengoptimalkan rute penjualan.',
+  },
+  {
+    title: 'Enterprise Resource Planing',
+    subTitle: 'Kelola bisnis anda tanpa rasa khawatir dengan Point ERP.',
+    detail:
+      'Tidak perlu menjadi master akunting untuk jadi pengusaha sukses! Dengan PointERP, Anda bisa fokus ke strategi bisnis dan hal-hal kreatif tanpa memusingkan ribetnya akunting!',
+  },
 ]
 
 export interface IPointSoftware {
@@ -20,6 +50,7 @@ export interface IPointSoftware {
 export const usePointSoftware = defineStore('point-software', {
   state: () => ({
     active: '',
+    activeIndex: 0,
     softwares,
     detail: {
       title: 'Key Performance Indicator',
@@ -38,14 +69,24 @@ export const usePointSoftware = defineStore('point-software', {
     getSoftwares() {
       return this.softwares
     },
-    setSelected(title: string) {
+    getSelectedSoftware(){
+      return { 
+        ...this.softwares[this.activeIndex],
+        images: [
+          '/assets/no_image_available.jpg',
+          '/assets/no_image_available.jpg',
+          '/assets/no_image_available.jpg'
+        ],
+        link: '/marketplace'
+      };
+    },
+    setSelected(index: number) {
+      const newDetail = this.softwares[index];
       this.detail = {
-        title,
-        subTitle: this.detail.subTitle,
-        detail: this.detail.detail,
-        images: this.detail.images,
-        link: this.detail.link
+        ...this.detail,
+        ...newDetail,
       }
+      this.activeIndex = index;
       return this.detail
     }
   }

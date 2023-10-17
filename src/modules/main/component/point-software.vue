@@ -1,17 +1,22 @@
 <script setup lang="ts">
 import { usePointSoftware } from '@/stores/point-software'
 import { storeToRefs } from 'pinia'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const pointSoftwareStore = usePointSoftware()
 
-const { softwares, detail } = storeToRefs(pointSoftwareStore)
+const { softwares } = storeToRefs(pointSoftwareStore)
+
 const activeSoftware = ref<number>(0)
 
 const selectSoftware = (index: number) => {
   activeSoftware.value = index
-  pointSoftwareStore.setSelected(softwares.value[index])
+  pointSoftwareStore.setSelected(index)
 }
+
+const detail = computed(() => {
+  return pointSoftwareStore.getSelectedSoftware();
+});
 </script>
 
 <template>
@@ -36,7 +41,7 @@ const selectSoftware = (index: number) => {
               ]"
               @click="selectSoftware(index)"
             >
-              {{ item }}
+              {{ item.title }}
             </h1>
           </h1>
         </div>
